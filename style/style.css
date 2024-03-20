@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+#hub {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-top: 1em;
+    padding-right: 2em;
+    text-align: end;
+    width: 6em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    color: white;
+    text-align: left;
+}
