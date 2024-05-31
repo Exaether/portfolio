@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Johan "Rutile" Le Fol</title>
+<title>Johan Le Fol</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style/style.css">
 <body>
@@ -26,13 +26,21 @@
             <h1>
                 Johan Le Fol
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p>Étudiant en BUT informatique à l'IUT2 de Grenoble
             </p>
     </section>
     <hr>
     <section id="projects">
+        <div class="detailsProjet" id="projet1">
+            <Article class="popupContent">
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <Button id="close1">Close</Button>
+            </Article>
+        </div>
+        
         <Article class="project">
             <img src="assets/sam.gif" alt="projet 1">
             <h3>un projet</h3>
@@ -42,6 +50,7 @@
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <button id="open1">More</button>
         </Article>
     
         <Article class="project">
@@ -89,6 +98,13 @@
         </p>
     </section>
 </main>
-
+<script>
+    open1.addEventListener('click', function (e) {
+        projet1.classList.add('show');
+    });
+    close1.addEventListener('click', function (e) {
+        projet1.classList.remove('show');
+    });
+</script>
 </body>
 </html> 
