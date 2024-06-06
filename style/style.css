@@ -69,7 +69,7 @@ nav {
     float: right;
     height: 100hv;
     position: sticky;
-    top: 40%;
+    top: 35%;
     width: 15%
 }
 
@@ -138,6 +138,8 @@ nav ul li a:hover {
     padding: 0;
     overflow: scroll;
     height: 85%;
+    width: 80%;
+    margin: auto;
 }
 
 .detailsProjet .project-head {
@@ -161,6 +163,8 @@ nav ul li a:hover {
     width: 100%;
 }
 
+
+
 .show {
     display: flex;
 }
@@ -174,11 +178,11 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition-duration: 0.5s;
 }
 
 .project:hover {
     transform: scale(1.05);
-    transition-duration: 0.5s;
 }
 
 .project img {
@@ -210,4 +214,22 @@ hr {
     border: 2px solid;
     color: inherit;
     border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.source {
+    padding: 1em 3em;
+    margin: .5em;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#CV {
+    height: 100vh;
 }

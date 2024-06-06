@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Johan Le Fol</title>
+<title>Portfolio Johan Le Fol</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style/style.css">
 <body>
@@ -9,13 +9,16 @@
 <nav>
     <ul>
         <li>
-            <a href="">CV</a>
+            <a href="#hub">Accueil</a>
         </li>
         <li>
             <a href="#projects">projets</a>
         </li>
         <li>
             <a href="#about">à propos</a>
+        </li>
+        <li>
+            <a href="#CV">CV</a>
         </li>
     </ul>
 </nav>
@@ -33,89 +36,142 @@
         <div class="detailsProjet" id="projet1">
             <Article class="popupContent">
                 <section class="project-head">
-                    <Button id="close1">Close</Button>
+                    <div class="btn-container">
+                        <Button id="close1">Fermer</Button>
+                        <a href="https://github.com/Exaether/Cellular-automaton/" class="source">Code source</a>
+                    </div>
                     <!--title here-->
-                    <h2>Projet 1</h2>
+                    <h2>Cellular automaton engine</h2>
+                    
                     <div class="language-logos">
                         <hr>
-                        <img src="assets/java.webp" alt="java">
+                        <img src="assets/Python.png" alt="python">
+                        <img src="assets/pygame.png" alt="pygame">
                     </div>
                 </section>
                 <hr>
                 <section class="project-content">
                     <p>
                         <!--content here-->
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.
+                        Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité".
+                        <br>
+                        Un automate cellulaire est un ensemble de cellules qui évoluent génération après génération sur une grille selon certaines règles.
+                        Il faut donc recalculer l'état de chaque cellule pour chaque génération.
+                        Le programme permer entre autre de:
+                        <ul>
+                            <li>
+                                Choisir un set de règles        
+                            </li>
+                            <li>
+                                Créer un set de règles
+                            </li>
+                            <li>
+                                Modifier manuellement l'état de chaque cellules
+                            </li>
+                        </ul>
+                        Ce projet était initialement prévu pour servir d'apprentissage de la bibliothèque Pygame, mais le résultat final étant satisfaisant, il est resté comme un de mes projets principaux
+                        N'ayant travaillé que seul sur ce projet, je n'ai mis en place aucune méthode d'organisation, bien que j'ai utilisé Git afin de sauvegarder mon travail.
+                        J'ai tout de même été contraint par un temps limité pour la réalisation de ce projet.
+                        <br>
+                        Lors de ce projet, j'ai prinipcalement aquis des compétences techniques, commen une meilleure maitrise du langage Python, et un apprentissage de la bibliothèque Pygame.
+                        C'est aussi un des premier programmes de taille conséquente que j'ai concu, ce qui m'a obligé à adopter des bonnes pratiques de programmation, tel que commenter le code et respecter les <a href="https://peps.python.org/pep-0008/">PEP</a> (Python Enhancement Proposals).
+                        <br>
+                        Enfin, j'ai apprécié ce projet principalement pour le fait de coder sans connaissance avancée de la bibliothèque, ce qui m'a obligé à me documenter pour réaliser ce programme.
                     </p>
+                    
                 </section>
             </Article>
         </div>
         
         <Article class="project">
-            <img src="assets/sam.gif" alt="projet 1">
+            <img src="assets/cellular.png" alt="projet 1">
             <!--title here-->
-            <h3>Projet 1</h3>
+            <h3>Cellular automaton engine</h3>
+            <hr>
             <p>
                 <!--content here-->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.
+                il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité".
             </p>
-            <button id="open1">More</button>
+            <div class="btn-container">
+                <button id="open1">Plus</button>
+                <a href="https://github.com/Exaether/Cellular-automaton/" class="source">Code source</a>
+            </div>
+            
         </Article>
 
         <div class="detailsProjet" id="projet2">
             <Article class="popupContent">
                 <section class="project-head">
-                    <Button id="close2">Close</Button>
+                    <div class="btn-container">
+                        <Button id="close2">Fermer</Button>
+                        <a href="https://github.com/Exaether/maze" class="source">Code source</a>
+                    </div>
                     <!--title here-->
-                    <h2>Projet 2</h2>
+                    <h2>Maze generator</h2>
                     <div class="language-logos">
                         <hr>
-                        <img src="assets/java.webp" alt="java">
+                        <img src="assets/Python.png" alt="python">
+                        <img src="assets/pygame.png" alt="pygame">
                     </div>
                 </section>
                 <hr>
                 <section class="project-content">
                     <p>
                         <!--content here-->
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.
+                        Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce par un seul et unique chemin.
+                        <br>
+                        Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.
+                        Le projet étant proposé dans le cadre du cours portant sur les structures d'arbre, nous avons dù modéliser le labyrinthe à partir d'un arbre.
+                        Nous avons ensuite utilisé des piles et des files pour contruire récursivement le labyrinthe de manière à ce qu'il soit parfait.
+                        <br>
+                        après le rendu de ce projet en cours de NSI, j'ai décidé de le continuer en implémentant un affichage graphique utilisant Pygame, ainsi que un joueur déplacable dans le labyrinthe.
+                        <br>
+                        <br>
+                        J'ai donc travaillé dans un groupe de trois personnes durant la moitié de ce projet, de plus, la date de rendu était imposée.
+                        Nous avons donc mis en place une division des tâches, en se répartissant chaqun un fichier du projet à coder.
+                        Nous n'avons toutefois pas utilisé Git pour cette partie du projet.
+                        <br>
+                        Dans la suite du projet, que j'ai réalisé seul, j'ai cette fois utilisé Git, mais pas d'autres méthode d'organisation.
+                        Lors de ce projet, mon rôle a été d'écrire l'algorithme de génération du labyrinthe en lui-même. J'ai donc pu mettre en application les cours de NSI traitant des arbres, piles et files.
+                        J'ai pu aussi renforcer ma maitrise du langage python ainsi que mes pratiques de programmation.
+                        <br>
+                        Lorsque j'ai repris le projet personnellement, j'ai dû utiliser Pygame, et j'ai donc renforcé ma connaissance de cette bibliothèque.
+
                     </p>
                 </section>
             </Article>
         </div>
     
         <Article class="project">
-            <img src="assets/sam.gif" alt="projet 2">
+            <img src="assets/maze.png" alt="projet 2">
             <!--title here-->
-            <h3>Projet 2</h3>
+            <h3>Maze generator</h3>
+            <hr>
             <p>
                 <!--content here-->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.
+                Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce par un seul et unique chemin.
+                <br>
+                Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.
             </p>
-            <button id="open2">More</button>
+            <div class="btn-container">
+                <button id="open2">Plus</button>
+                <a href="https://github.com/Exaether/maze" class="source">Code source</a>
+            </div>
         </Article>
 
         <div class="detailsProjet" id="projet3">
             <Article class="popupContent">
                 <section class="project-head">
-                    <Button id="close3">Close</Button>
+                    <div class="btn-container">
+                        <Button id="close3">Fermer</Button>
+                        <a href="https://github.com/Aspics/SAE-1.012" class="source">Code source</a>
+                    </div>
                     <!--title here-->
-                    <h2>Projet 3</h2>
+                    <h2>Classification de dépèches</h2>
                     <div class="language-logos">
                         <hr>
                         <img src="assets/java.webp" alt="java">
@@ -125,81 +181,126 @@
                 <section class="project-content">
                     <p>
                         <!--content here-->
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        La SAE1.01/2 s’inscrit dans les compétences 1 et 2, soit respectivement « Réaliser un
+                        développement d’application » et « Optimiser des applications informatiques ». Pour mettre en
+                        pratique ces compétences, la SAE demande d’implémenter un système simple de classification
+                        automatique de dépêches selon différents thèmes. Le développement du projet est réalisé en Java.
+                        En plus de la simple création du système de classification, il est aussi demandé d’optimiser au
+                        maximum l’algorithme pour réduire le temps d’exécution du programme.
+                        <br>
+                        <br>
+                        Lors de ce projet, nous avons identifié le problème posé, puis cherché les solutions possibles
+                        pour le résoudre. La solution proposée par le sujet est de trier les dépêches à partir de tableaux de
+                        mots-clés. Après avoir implémenté cette solution, nous avons choisis de développer les autres
+                        solutions trouvées, à savoir l’utilisation de dictionnaires de mots clés à la place des tableaux, et le tri
+                        des tableaux de mot-clés. Nous avons pu ainsi comparer les différents algorithmes et structures de
+                        données utilisées dans ces différentes solutions.
+                        <br>
+                        <br>
+                        Dans ce projet, j’ai principalement appris l’utilisation de l’outil de gestion de version Git.
+                        Mon rôle dans le groupe était un rôle général, puisque le groupe ne comportait que 2 membres. Cela
+                        dit, j’ai pu participer au développement des approches, mais aussi à la correction et vérification des
+                        programmes de l’autre membre du groupe.
                     </p>
                 </section>
             </Article>
         </div>
     
         <Article class="project">
-            <img src="assets/sam.gif" alt="projet 3">
+            <img src="assets/classification.png" alt="projet 3">
             <!--title here-->
-            <h3>Projet 3</h3>
+            <h3>Classification de dépèches</h3>
+            <hr>
             <p>
                 <!--content here-->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                La SAE1.01/2 s’inscrit dans les compétences 1 et 2, soit respectivement « Réaliser un
+                développement d’application » et « Optimiser des applications informatiques ». Pour mettre en
+                pratique ces compétences, la SAE demande d’implémenter un système simple de classification
+                automatique de dépêches selon différents thèmes.
             </p>
-            <button id="open3">More</button>
+            <div class="btn-container">
+                <button id="open3">Plus</button>
+                <a href="https://github.com/Aspics/SAE-1.012" class="source">Code source</a>
+            </div>
         </Article>
 
         <div class="detailsProjet" id="projet4">
             <Article class="popupContent">
                 <section class="project-head">
-                    <Button id="close4">Close</Button>
+                    <div class="btn-container">
+                        <Button id="close4">Fermer</Button>
+                    </div>
                     <!--title here-->
-                    <h2>Projet 4</h2>
+                    <h2>Dotfiles</h2>
                     <div class="language-logos">
                         <hr>
-                        <img src="assets/java.webp" alt="java">
+                        <img src="assets/Arch.png" alt="Arch linux">
+                        <img src="assets/Linux.png" alt="linux">
+                        <img src="assets/I3.png" alt="I3">
+                        <img src="assets/Polybar.png" alt="Polybar">
                     </div>
                 </section>
                 <hr>
                 <section class="project-content">
                     <p>
                         <!--content here-->
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h3 style="margin-top: 0;">"I use Arch btw"</h3>
+                        <br>
+                        <br>
+                        En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé.
+                        Arch linux est une distribution linux très légère qui a pour principe de n'inclure que le stricte nécéssaire au fonctionnement de l'ordinateur.
+                        Cela a l'avantage de la personalisation; je suis libre de choisir ce que j'utilise pour toutes les tâches.
+                        <br>
+                        Le terme "dotfiles" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.
+                        Pour atteindre une interface de bureau comme aujourd'huis, j'ai dû modifier beaucoups de ces fichiers de configuration afin de modifier chaque élément de mon espace de travail.
+                        <br>
+                        <br>
+                        Durant ce projet, j'ai pu compléter ma maitrise du système linux, mais aussi renforcer ma connaissance quand au fonctionnement d'un ordinateur.
+                        J'ai appris à utiliser un ordinateur Linux sans interface graphique, et j'ai donc complété ma connaissance des commandes Linux.
                     </p>
                 </section>
             </Article>
         </div>
     
         <Article class="project">
-            <img src="assets/sam.gif" alt="projet 4">
+            <img src="assets/dotfiles.png" alt="projet 4">
             <!--title here-->
-            <h3>Projet 4</h3>
+            <h3>Dotfiles</h3>
+            <hr>
+            <!--content here-->
+            <h3 style="margin-top: 0;">"I use Arch btw"</h3>
             <p>
-                <!--content here-->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé.
             </p>
-            <button id="open4">More</button>
+            <div class="btn-container">
+                <button id="open4">Plus</button>
+            </div>
         </Article>
     </section>
     
     <hr>
 
     <section id="about">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+    </section>
+
+    <hr>
+
+    <section id="CV">
+        <embed
+            src="assets/CV.pdf"
+            type="application/pdf"
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+        ></embed>
     </section>
 </main>
 <script>
