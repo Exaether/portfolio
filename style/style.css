@@ -233,3 +233,21 @@ hr {
 #CV {
     height: 100vh;
 }
+
+#about {
+    width: 50%;
+    margin: auto;
+}
+
+#about li {
+    margin-top: 10px;
+}
+
+#about a {
+    color: var(--main-color);
+    transition-duration: 0.2s;
+}
+
+#about a:hover {
+    color: blue;
+}
