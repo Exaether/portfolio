@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Portfolio Johan Le Fol</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style/style.css">
+<head>
+	<html lang="en">
+		<meta charset="UTF-8">
+		<title>Portfolio Johan Le Fol</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="style/style.css">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+			$(window).on("scroll", function() {
+				var currentPos = $(window).scrollTop();
+
+				$('nav a').each(function() {
+					var sectionLink = $(this);
+					var section = $(sectionLink.attr('href'));
+
+					if(section.position().top <= currentPos + 8 && section.position().top + section.height() >= currentPos + 8) {
+						$('nav a').removeClass('active');
+						sectionLink.addClass('active');
+					} else {
+						sectionLink.removeClass('active');
+					}
+				});        
+			});
+		</script>
+</head>
 <body>
 
 <nav>
+	<div class="toggle-container" id="themeToggle">
+		<svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<circle cx="12" cy="12" r="5"></circle>
+			<line x1="12" y1="1" x2="12" y2="3"></line>
+			<line x1="12" y1="21" x2="12" y2="23"></line>
+			<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+			<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+			<line x1="1" y1="12" x2="3" y2="12"></line>
+			<line x1="21" y1="12" x2="23" y2="12"></line>
+			<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+			<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+		</svg>
+		<svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+		</svg>
+	</div>
     <ul>
         <li>
             <a href="#hub">Accueil</a>
@@ -40,8 +76,8 @@
             <Article class="popupContent">
                 <section class="project-head">
                     <div class="btn-container">
-                        <Button id="close1">Fermer</Button>
-                        <a href="https://github.com/Exaether/Cellular-automaton/" class="source">Code source</a>
+                        <Button id="close1" class="button">Fermer</Button>
+                        <a href="https://github.com/Exaether/Cellular-automaton/" class="button" >Code source</a>
                     </div>
                     <!--title here-->
                     <h2>Cellular automaton engine</h2>
@@ -98,8 +134,8 @@
                 il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité".
             </p>
             <div class="btn-container">
-                <button id="open1">Plus</button>
-                <a href="https://github.com/Exaether/Cellular-automaton/" class="source">Code source</a>
+                <button id="open1" class="button">Plus</button>
+                <a href="https://github.com/Exaether/Cellular-automaton/" class="button" >Code source</a>
             </div>
             
         </Article>
@@ -108,8 +144,8 @@
             <Article class="popupContent">
                 <section class="project-head">
                     <div class="btn-container">
-                        <Button id="close2">Fermer</Button>
-                        <a href="https://github.com/Exaether/maze" class="source">Code source</a>
+                        <Button id="close2" class="button">Fermer</Button>
+                        <a href="https://github.com/Exaether/maze" class="button" >Code source</a>
                     </div>
                     <!--title here-->
                     <h2>Maze generator</h2>
@@ -161,8 +197,8 @@
                 Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.
             </p>
             <div class="btn-container">
-                <button id="open2">Plus</button>
-                <a href="https://github.com/Exaether/maze" class="source">Code source</a>
+                <button id="open2" class="button">Plus</button>
+                <a href="https://github.com/Exaether/maze" class="button">Code source</a>
             </div>
         </Article>
 
@@ -170,8 +206,8 @@
             <Article class="popupContent">
                 <section class="project-head">
                     <div class="btn-container">
-                        <Button id="close3">Fermer</Button>
-                        <a href="https://github.com/Aspics/SAE-1.012" class="source">Code source</a>
+                        <Button id="close3" class="button">Fermer</Button>
+                        <a href="https://github.com/Aspics/SAE-1.012" class="button">Code source</a>
                     </div>
                     <!--title here-->
                     <h2>Classification de dépèches</h2>
@@ -222,8 +258,8 @@
                 automatique de dépêches selon différents thèmes.
             </p>
             <div class="btn-container">
-                <button id="open3">Plus</button>
-                <a href="https://github.com/Aspics/SAE-1.012" class="source">Code source</a>
+                <button id="open3" class="button">Plus</button>
+                <a href="https://github.com/Aspics/SAE-1.012" class="button">Code source</a>
             </div>
         </Article>
 
@@ -231,7 +267,7 @@
             <Article class="popupContent">
                 <section class="project-head">
                     <div class="btn-container">
-                        <Button id="close4">Fermer</Button>
+                        <Button id="close4" class="button">Fermer</Button>
                     </div>
                     <!--title here-->
                     <h2>Dotfiles</h2>
@@ -276,7 +312,7 @@
             En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé.
             </p>
             <div class="btn-container">
-                <button id="open4">Plus</button>
+                <button id="open4" class="button">Plus</button>
             </div>
         </Article>
     </section>
@@ -352,34 +388,5 @@
         ></embed>
     </section>
 </main>
-<script>
-    open1.addEventListener('click', function (e) {
-        projet1.classList.add('show');
-    });
-    close1.addEventListener('click', function (e) {
-        projet1.classList.remove('show');
-    });
-
-    open2.addEventListener('click', function (e) {
-        projet2.classList.add('show');
-    });
-    close2.addEventListener('click', function (e) {
-        projet2.classList.remove('show');
-    });
-
-    open3.addEventListener('click', function (e) {
-        projet3.classList.add('show');
-    });
-    close3.addEventListener('click', function (e) {
-        projet3.classList.remove('show');
-    });
-
-    open4.addEventListener('click', function (e) {
-        projet4.classList.add('show');
-    });
-    close4.addEventListener('click', function (e) {
-        projet4.classList.remove('show');
-    });
-</script>
+<script src="js/script.js"> </script>
 </body>
-</html> 

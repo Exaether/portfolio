@@ -1,15 +1,64 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
 /*usage for ULTRAFONT: 'VCR OSD Mono'*/
+
 :root {
-    --main-color: #F2F2F2;
-    --bg-color: #0A0A0A;
+    --main-color: #D65A00;
+	--secondary-color: #7C4A1A;
+    --bg-color: #FDF6E4;
+	--text-color: #2B2B2B;
+	--accent-color: #E8A900;
+	--highlight-color: #C47A10;
 }
+
+.dark-mode {
+    --bg-color: #1C1B1A;
+	--text-color: #F5E6C8;
+}
+
+/*-------------------COLORS-------------------*/
+
+h1 {
+	color: var(--highlight-color);
+	text-shadow: 0px 0px 10px var(--secondary-color);
+}
+
+.popupContent {
+	background-color: var(--bg-color);
+	border-color: var(--secondary-color);
+}
+
+.project {
+	border-color: var(--secondary-color);
+}
+
+.button {
+	background-color: var(--main-color);
+	color: var(--text-color);
+	transition-duration: .5s;
+}
+
+.button:hover {
+	background-color: var(--accent-color);
+	color: var(--text-color);
+}
+
+a {
+	color: var(--text-color);
+	transition-duration: .2s;
+}
+
+a:hover {
+	color: var(--highlight-color);
+}
+
+/*--------------------------------------------*/
 
 body {
     background-color: var(--bg-color);
-    color: var(--main-color);
+    color: var(--text-color);
     font-family: sans-serif;
 	font-size: 11pt;
+	transition: background-color .5s, color .5s;
 }
 
 main {
@@ -54,7 +103,6 @@ h1 {
     margin: 0;
 	font-family: 'VCR OSD Mono';
     animation: .7s ease-out 0s 1 slideInFromAboveLeft;
-	text-shadow: 0px 0px 10px var(--main-color);
 }
 
 #title {
@@ -77,8 +125,9 @@ nav {
 	right: 0;
 	overflow-x: hidden;
 	display: flex;
-	justify-content: right;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 nav ul {
@@ -106,7 +155,7 @@ nav a {
 	font-family: 'VCR OSD Mono';
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     padding-right: 4em;
 }
 
@@ -117,7 +166,7 @@ nav a::after {
 	width: 5em;
 	content: "";
 	top: 50%;
-	background-color: var(--main-color);
+	background-color: var(--text-color);
 	transition-duration: 0.5s;
 }
 
@@ -153,7 +202,6 @@ nav a:hover::after {
 }
 
 .popupContent {
-    background-color: var(--bg-color);
     border: 3px solid;
     border-radius: 20px;
     padding: 20px;
@@ -226,12 +274,11 @@ nav a:hover::after {
     text-align: justify;
 }
 
-.project button, .detailsProjet button {
-    font: inherit;
+.button {
+	text-decoration: none;
+	cursor: pointer;
     padding: 1em 3em;
     margin: .5em;
-    background-color: var(--main-color);
-    color: var(--bg-color);
     border: none;
     border-radius: 5px;
 }
@@ -247,16 +294,6 @@ hr {
     display: flex;
 }
 
-.source {
-    padding: 1em 3em;
-    margin: .5em;
-    background-color: var(--main-color);
-    color: var(--bg-color);
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
 #CV {
     height: 100vh;
 }
@@ -270,11 +307,27 @@ hr {
     margin-top: 10px;
 }
 
-#about a {
-    color: var(--main-color);
-    transition-duration: 0.2s;
+/* Styles for the toggle container */
+.toggle-container {
+    cursor: pointer;
+	position: absolute;
+	top: 40px;
+	right: 40px;
 }
-
-#about a:hover {
-    color: blue;
+/* Styles for the sun and moon icons */
+.sun-icon, .moon-icon {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+/* Hide moon icon by default (light mode) */
+.moon-icon {
+    display: none;
+}
+/* Show moon icon and hide sun icon in dark mode */
+.dark-mode .sun-icon {
+    display: none;
+}
+.dark-mode .moon-icon {
+    display: inline-block;
 }
