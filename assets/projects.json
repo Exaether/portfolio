@@ -1,0 +1,66 @@
+[
+{
+    "id": "s4v10",
+    "name": "Shelf 4, Volume 10",
+    "source": "",
+    "preview": "",
+    "desc": "",
+    "techs": ["csharp", "unity"]
+},
+{
+    "id": "w5",
+    "name": "Wall 5",
+    "source": "",
+    "preview": "",
+    "desc": "",
+    "techs": ["godot"]
+},
+{
+    "id": "rkmEditor",
+    "name": "RKM Editor",
+    "source": "",
+    "preview": "",
+    "desc": "",
+    "techs": ["cpp", "qt"]
+},
+{
+    "id": "ludimap",
+    "name": "Ludi-Map",
+    "source": "https://github.com/Exaether/Ludi-map",
+    "preview": "",
+    "desc": "",
+    "techs": ["php", "js", "html", "css"]
+},
+{
+    "id": "cellular",
+    "name": "Cellular automaton engine",
+    "source": "https://github.com/Exaether/Cellular-automaton/",
+    "preview": "",
+    "desc": "",
+    "techs": ["Python", "Pygame"]
+},
+{
+    "id": "dotfiles",
+    "name": "Dotfiles",
+    "source": "https://github.com/Exaether/dotfiles",
+    "preview": "<h3>I use arch btw</h3>",
+    "desc": "",
+    "techs": ["Linux", "Arch", "I3", "Polybar"]
+},
+{
+    "id": "portfolio",
+    "name": "Portfolio",
+    "source": "https://github.com/Exaether/portfolio",
+    "preview": "<h3>I use arch btw</h3>",
+    "desc": "",
+    "techs": ["html", "css", "js"]
+},
+{
+    "id": "maze",
+    "name": "Maze generator",
+    "source": "https://github.com/Exaether/maze",
+    "preview": "",
+    "desc": "",
+    "techs": ["Python", "Pygame"]
+}
+]
