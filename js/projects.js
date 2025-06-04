@@ -23,7 +23,7 @@ function createProject(project) {
 	preview.innerHTML += `
 		<h3>${project.name}</h3>
 		<hr>
-		<p>${project.preview}</p>`;
+		<p>${project.preview.join("<br>")}</p>`;
 	preview.appendChild(openButton);
 
 	let details = document.createElement("div");
@@ -41,7 +41,7 @@ function createProject(project) {
 			<hr>
 			<section class="project-content">
 				<p>
-					${project.desc}
+					${project.desc.join("<br>")}
 				</p>
 				<a href="${project.source}" class="button" >Code source</a>
 			</section>

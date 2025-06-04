@@ -3,64 +3,141 @@
     "id": "s4v10",
     "name": "Shelf 4, Volume 10",
     "source": "",
-    "preview": "",
-    "desc": "",
+    "preview": [""],
+    "desc": [""],
     "techs": ["csharp", "unity"]
 },
+
+
+
+
 {
     "id": "w5",
     "name": "Wall 5",
     "source": "",
-    "preview": "",
-    "desc": "",
+    "preview": [""],
+    "desc": [""],
     "techs": ["godot"]
 },
+
+
+
+
 {
     "id": "rkmEditor",
     "name": "RKM Editor",
     "source": "",
-    "preview": "",
-    "desc": "",
+    "preview": [
+			"Le RKM Editor est un logiciel développé au sein du laboratoire G-SCOP.",
+			"Il permet de modéliser les connaissances sous forme d'un graphe appellé un RKM."
+		],
+    "desc": [""],
     "techs": ["cpp", "qt"]
 },
+
+
+
+
 {
     "id": "ludimap",
     "name": "Ludi-Map",
     "source": "https://github.com/Exaether/Ludi-map",
-    "preview": "",
-    "desc": "",
+    "preview": [""],
+    "desc": [""],
     "techs": ["php", "js", "html", "css"]
 },
+
+
+
+
 {
     "id": "cellular",
     "name": "Cellular automaton engine",
     "source": "https://github.com/Exaether/Cellular-automaton/",
-    "preview": "",
-    "desc": "",
+    "preview": [
+			"Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.",
+			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité"
+		],
+    "desc": [
+			"Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.",
+			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité",
+			"<br> Un automate cellulaire est un ensemble de cellules qui évoluent génération après génération sur une grille selon certaines règles.",
+			"Il faut donc recalculer l'état de chaque cellule pour chaque génération.",
+			"Le programme permer entre autre de:",
+			"<ul> <li> Choisir un set de règles </li> <li> Créer un set de règles </li> <li> Modifier manuellement l'état de chaque cellules </li> </ul>",
+			"Ce projet était initialement prévu pour servir d'apprentissage de la bibliothèque Pygame, mais le résultat final étant satisfaisant, il est resté comme un de mes projets principaux.",
+			"N'ayant travaillé que seul sur ce projet, je n'ai mis en place aucune méthode d'organisation, bien que j'ai utilisé Git afin de sauvegarder mon travail.",
+			"J'ai tout de même été contraint par un temps limité pour la réalisation de ce projet.",
+			"<br> Lors de ce projet, j'ai prinipcalement aquis des compétences techniques, comme une meilleure maitrise du langage Python, et un apprentissage de la bibliothèque Pygame.",
+			"C'est aussi un des premier programmes de taille conséquente que j'ai concu, ce qui m'a obligé à adopter des bonnes pratiques de programmation, tel que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
+			"<br> Enfin, j'ai apprécié ce projet principalement pour le fait de coder sans connaissance avancée de la bibliothèque, ce qui m'a obligé à me documenter pour réaliser ce programme."
+		],
     "techs": ["Python", "Pygame"]
 },
+
+
+
+
 {
     "id": "dotfiles",
     "name": "Dotfiles",
     "source": "https://github.com/Exaether/dotfiles",
-    "preview": "<h3>I use arch btw</h3>",
-    "desc": "",
+    "preview": [
+		"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
+		"En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé."
+	],
+    "desc": [
+		"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
+		"<br> <br> En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé.",
+		"Arch linux est une distribution linux très légère qui a pour principe de n'inclure que le stricte nécéssaire au fonctionnement de l'ordinateur.",
+		"Cela a l'avantage de la personalisation; je suis libre de choisir ce que j'utilise pour toutes les tâches.",
+		"<br> Le terme \"dotfiles\" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.",
+		"Pour atteindre une interface de bureau comme aujourd'huis, j'ai dû modifier beaucoups de ces fichiers de configuration afin de modifier chaque élément de mon espace de travail.",
+		"<br> <br> Durant ce projet, j'ai pu compléter ma maitrise du système linux, mais aussi renforcer ma connaissance quand au fonctionnement d'un ordinateur.",
+		"J'ai appris à utiliser un ordinateur Linux sans interface graphique, et j'ai donc complété ma connaissance des commandes Linux."
+	],
     "techs": ["Linux", "Arch", "I3", "Polybar"]
 },
+
+
+
+
 {
     "id": "portfolio",
     "name": "Portfolio",
     "source": "https://github.com/Exaether/portfolio",
-    "preview": "<h3>I use arch btw</h3>",
-    "desc": "",
+    "preview": [""],
+    "desc": [""],
     "techs": ["html", "css", "js"]
 },
+
+
+
+
 {
     "id": "maze",
     "name": "Maze generator",
     "source": "https://github.com/Exaether/maze",
-    "preview": "",
-    "desc": "",
+    "preview": [
+			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
+			"Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce par un seul et unique chemin.",
+			"<br> Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files."
+		],
+    "desc": [
+			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
+			"Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce par un seul et unique chemin.",
+			"<br> Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.",
+			"Le projet étant proposé dans le cadre du cours portant sur les structures d'arbre, nous avons dù modéliser le labyrinthe à partir d'un arbre.",
+			"Nous avons ensuite utilisé des piles et des files pour contruire récursivement le labyrinthe de manière à ce qu'il soit parfait.",
+			"<br> après le rendu de ce projet en cours de NSI, j'ai décidé de le continuer en implémentant un affichage graphique utilisant Pygame, ainsi que un joueur déplacable dans le labyrinthe.",
+			"<br> J'ai donc travaillé dans un groupe de trois personnes durant la moitié de ce projet, de plus, la date de rendu était imposée.",
+			"Nous avons donc mis en place une division des tâches, en se répartissant chaqun un fichier du projet à coder.",
+			"Nous n'avons toutefois pas utilisé Git pour cette partie du projet.",
+			"<br> Dans la suite du projet, que j'ai réalisé seul, j'ai cette fois utilisé Git, mais pas d'autres méthode d'organisation.",
+			"Lors de ce projet, mon rôle a été d'écrire l'algorithme de génération du labyrinthe en lui-même. J'ai donc pu mettre en application les cours de NSI traitant des arbres, piles et files.",
+			"J'ai pu aussi renforcer ma maitrise du langage python ainsi que mes pratiques de programmation.",
+			"<br> Lorsque j'ai repris le projet personnellement, j'ai dû utiliser Pygame, et j'ai donc renforcé ma connaissance de cette bibliothèque."
+		],
     "techs": ["Python", "Pygame"]
 }
 ]
