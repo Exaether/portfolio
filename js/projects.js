@@ -31,27 +31,36 @@ function createProject(project) {
 	details.innerHTML = `
 		<article class="popupContent">
 			<section class="project-head">
-					<Button class="button closeButton">Fermer</Button>
-				<h2>${project.name}</h2>
-				
 				<div class="language-logos">
 					<hr>
 				</div>
+				<h2>${project.name}</h2>
+				<svg class="closeButton" width="70" height="70" xmlns="http://www.w3.org/2000/svg" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+					<line y2="35" x2="35" y1="6" x1="6"/>
+					<line y2="64" x2="6" y1="6" x1="64"/>
+					<line y2="64" x2="64" y1="42" x1="42"/>
+				</svg>
 			</section>
 			<hr>
 			<section class="project-content">
 				<p>
 					${project.desc.join("<br>")}
 				</p>
-				<a href="${project.source}" class="button" >Code source</a>
+				<div class="btn-container">
+				</div>
 			</section>
 		</article>` ;
 
-	let links = details.querySelector(".language-logos");
+	let languages = details.querySelector(".language-logos");
 	project.techs.forEach(element => {
-		links.innerHTML += `<img src="assets/images/languages/${element}.png" alt="${element}">`;
+		languages.innerHTML = `<img src="assets/images/languages/${element}.png" alt="${element}">` + languages.innerHTML;
 	});
 	
+	let links = details.querySelector(".btn-container");
+	project.source.forEach(element => {
+		links.innerHTML += `<a href="${element.link}" class="button" >${element.name}</a>`;
+	});
+
 	let closeButton = details.querySelector(".closeButton");
 	closeButton.addEventListener("click", () => {
 		details.classList.remove("show");

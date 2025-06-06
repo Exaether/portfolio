@@ -4,6 +4,7 @@
 :root {
     --main-color: #D65A00;
 	--secondary-color: #7C4A1A;
+	--warning-color: #FF3010;
     --bg-color: #FDF6E4;
     --bg-color-alt: #FBEBD2;
 	--bg: linear-gradient(180deg, #FDF6E4, #FBEBD2);
@@ -52,7 +53,18 @@ h1 {
 .button {
 	background-color: var(--main-color);
 	color: var(--text-color);
+	text-align: center;
+	padding: 0px;
 	transition-duration: .5s;
+}
+
+.closeButton {
+	color: var(--warning-color);
+	transition: color .3s;
+}
+
+.closeButton:hover {
+	color: var(--main-color);
 }
 
 .button:hover {
@@ -253,6 +265,7 @@ nav a::after {
 .detailsProjet .project-head {
     display: flex;
     justify-content: space-between;
+	align-items: center;
     padding: 0;
     margin-bottom: 20px;
     height: 10%;
@@ -324,6 +337,7 @@ hr {
 
 .btn-container {
     display: flex;
+	justify-content: center;
 }
 
 #CV {

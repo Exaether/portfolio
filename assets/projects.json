@@ -2,9 +2,19 @@
 {
     "id": "s4v10",
     "name": "Shelf 4, Volume 10",
-    "source": "",
-    "preview": [""],
-    "desc": [""],
+    "source": [
+			{
+				"name": "Design Document",
+				"link": ""
+			}
+		],
+    "preview": [
+			"Shelf 4, Volume 10 est un projet de jeu de type hack&slash en 2D basé sur des mécaniques de coordination.",
+			"Le joueur peut contrôler plusieurs personnages simultannément pour effectuer des combos."
+		],
+    "desc": [
+			"Ce projet est le premier "
+		],
     "techs": ["csharp", "unity"]
 },
 
@@ -14,10 +24,20 @@
 {
     "id": "w5",
     "name": "Wall 5",
-    "source": "",
-    "preview": [""],
-    "desc": [""],
-    "techs": ["godot"]
+    "source": [
+			{
+				"name": "Design Document",
+				"link": ""
+			}
+		],
+    "preview": [
+			"Wall 5 est un projet de jeu déstiné à être une introduction à l'histoire et aux mécaniques de Shelf 4, Volume 10.",
+			"Ce jeu est pour moi aussi une introduction au game developement et à l'utilisation de Unity"
+		],
+    "desc": [
+			""
+		],
+    "techs": ["csharp", "unity"]
 },
 
 
@@ -26,12 +46,23 @@
 {
     "id": "rkmEditor",
     "name": "RKM Editor",
-    "source": "",
+    "source": [],
     "preview": [
 			"Le RKM Editor est un logiciel développé au sein du laboratoire G-SCOP.",
 			"Il permet de modéliser les connaissances sous forme d'un graphe appellé un RKM."
 		],
-    "desc": [""],
+    "desc": [
+			"Durant mon stage de 2ème année de BUT informatique, j'ai rejoint le laboratoire G-SCOP.",
+			"Ce laboratoire développe de nouvelles méthodes de production en respectant une vision environnementale et de sobriété énergétique.",
+			"<br> Durant ce stage, j'ai travaillé sur le RKM Editor, un logicel permettant de modéliser la connaissance sous forme d'un graphe appelé un RKM.",
+			"Le logiciel est déstiné aux chercheurs du laboratoire, pour modéliser les processus de fabrication, mais aussi a d'autres entreprises, qui peuvent l'utiliser comme un outil d'aide à la décision",
+			"Le RKM Editor est développé en C++ avec la bibliothèque graphique Qt.",
+			"<br> Durant le stage, j'ai travaillé seul sur le projet, des réunions fréquentes étaient faites pour discuter de l'avancement du développement, et pour proposer différentes améliorations possibles.",
+			"<br> J'ai pu découvrir que le code de l'application d'origine était très désorganisé et ne suivait pas d'architecture claire.",
+			"Il a donc été nécessaire de refactoriser le logiciel entièrement pour rendre le code maintenable, ce qui m'a permis ensuite d'ajouter des fonctionnalités qui n'auraient pas été possibles précédemment.",
+			"<br> Ce stage m'a permis de grandement renforcer mes compétences en C++, mais aussi en architecture logicielle et en refactorisation d'un code legacy.",
+			"La qualité de code est une compétence qui a été largement mise en jeu durant la réalisation de ce projet, pour garder un code maintenable."
+		],
     "techs": ["cpp", "qt"]
 },
 
@@ -41,9 +72,28 @@
 {
     "id": "ludimap",
     "name": "Ludi-Map",
-    "source": "https://github.com/Exaether/Ludi-map",
-    "preview": [""],
-    "desc": [""],
+    "source": [
+			{
+				"name": "Code Source",
+				"link": "https://github.com/Exaether/Ludi-map"
+			}
+		],
+    "preview": [
+			"Ludi-Map est un jeu interactif en ligne avec des cartes anciennes pour mettre en valeur la géographie et les monuments de notre région.",
+			"Ce site a été développé dans le cadre de la SAE du semeste 3 du BUT informatique."
+		],
+    "desc": [
+			"Dans le carde de la SAE du semeste 3 du BUT informatique, nous devions développer un site web mettant en valeur le patrimoine francais.",
+			"C'est dans ce contexte que mon équipe a développé Ludi-Map, un jeu interactif présentant des cartes de l'état major des années 1820-1866.",
+			"Les règles du jeu sont les suivantes:",
+			"Un monument historique est choisis au hasard, et il est affiché sur une photo aérienne.",
+			"Le joueur doit alors retrouver ce même monument, mais cette fois sur une care des années 1820",
+			"L'objectif de ce jeu est de présenter au joueur les différents monuments de notre région, ainsi que les paysages et la géographie environnante.",
+			"<br> Ludi-Map a été développé principalement en PHP et en JavaScript, ainsi que du HTML/CSS pour les interfaces. L'hébergement du serveur a été fait grâce à des machines virtuelles mises à disposition par l'IUT.",
+			"Pour le développement de ce site, j'ai fait parti d'une équipe de 6 personnes. Mon rôle dans cette équipe était principalement axé sur la partie back-end du site.",
+			"J'ai aussi joué le rôle de support aux différents membres du groupe, j'ai donc passé du temps à aider chaqun d'entre eux à régler différents problèmes.",
+			"Ce projet m'a permis d'approfondir mes compétences dans les technologies web telles que PHP et JavaScript. J'ai aussi pu améliorer mes compétences de gestion de projet et de travail en groupe, puisque une grande partie de cette SAE y étati consacrée."
+		],
     "techs": ["php", "js", "html", "css"]
 },
 
@@ -53,23 +103,28 @@
 {
     "id": "cellular",
     "name": "Cellular automaton engine",
-    "source": "https://github.com/Exaether/Cellular-automaton/",
+    "source": [
+			{
+				"name": "Code Source",
+				"link": "https://github.com/Exaether/Cellular-automaton"
+			}
+		],
     "preview": [
-			"Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.",
-			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité"
+			"Un simulateur d'automate cellulaire écrit en python.",
+			"Le programme permet de simuler les règles d'un automate cellulaire, notamment le jeu de la vie."
 		],
     "desc": [
 			"Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.",
-			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité",
+			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité.",
 			"<br> Un automate cellulaire est un ensemble de cellules qui évoluent génération après génération sur une grille selon certaines règles.",
-			"Il faut donc recalculer l'état de chaque cellule pour chaque génération.",
-			"Le programme permer entre autre de:",
+			"Il faut donc recalculer l'état de chaque cellule à chaque génération.",
+			"Le programme permer entre autre de :",
 			"<ul> <li> Choisir un set de règles </li> <li> Créer un set de règles </li> <li> Modifier manuellement l'état de chaque cellules </li> </ul>",
 			"Ce projet était initialement prévu pour servir d'apprentissage de la bibliothèque Pygame, mais le résultat final étant satisfaisant, il est resté comme un de mes projets principaux.",
 			"N'ayant travaillé que seul sur ce projet, je n'ai mis en place aucune méthode d'organisation, bien que j'ai utilisé Git afin de sauvegarder mon travail.",
 			"J'ai tout de même été contraint par un temps limité pour la réalisation de ce projet.",
 			"<br> Lors de ce projet, j'ai prinipcalement aquis des compétences techniques, comme une meilleure maitrise du langage Python, et un apprentissage de la bibliothèque Pygame.",
-			"C'est aussi un des premier programmes de taille conséquente que j'ai concu, ce qui m'a obligé à adopter des bonnes pratiques de programmation, tel que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
+			"C'est aussi un des premier programmes de taille conséquente que j'ai concu, j'ai donc dû adopter des bonnes pratiques de programmation, tel que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
 			"<br> Enfin, j'ai apprécié ce projet principalement pour le fait de coder sans connaissance avancée de la bibliothèque, ce qui m'a obligé à me documenter pour réaliser ce programme."
 		],
     "techs": ["Python", "Pygame"]
@@ -81,20 +136,29 @@
 {
     "id": "dotfiles",
     "name": "Dotfiles",
-    "source": "https://github.com/Exaether/dotfiles",
+    "source": [
+			{
+				"name": "Code Source",
+				"link": "https://github.com/Exaether/dotfiles"
+			}
+		],
     "preview": [
-		"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
-		"En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé."
+			"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
+			"J'ai installé et configuré Arch linux sur mon ordinateur personnel.",
+			"J'ai donc commencé ce projet avec un écran noir et une ligne de commande. J'ai maintenant un environnement de bureau entièrement fonctionnel, optimisé et personnalisé."
 	],
     "desc": [
-		"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
-		"<br> <br> En effet, j'ai installé et configuré Arch linux entièrement à la main pour créer un bureau de programmation complètement personnalisé.",
-		"Arch linux est une distribution linux très légère qui a pour principe de n'inclure que le stricte nécéssaire au fonctionnement de l'ordinateur.",
-		"Cela a l'avantage de la personalisation; je suis libre de choisir ce que j'utilise pour toutes les tâches.",
-		"<br> Le terme \"dotfiles\" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.",
-		"Pour atteindre une interface de bureau comme aujourd'huis, j'ai dû modifier beaucoups de ces fichiers de configuration afin de modifier chaque élément de mon espace de travail.",
-		"<br> <br> Durant ce projet, j'ai pu compléter ma maitrise du système linux, mais aussi renforcer ma connaissance quand au fonctionnement d'un ordinateur.",
-		"J'ai appris à utiliser un ordinateur Linux sans interface graphique, et j'ai donc complété ma connaissance des commandes Linux."
+			"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
+			"Arch linux est une distribution linux minimale qui a pour principe de n'inclure que le stricte nécéssaire au fonctionnement de l'ordinateur.",
+			"Je suis donc libre d'inclure tous les logiciels dont j'ai besoin, tout en gardant un grand contôle sur mon système.",
+			"<br> Le terme \"dotfiles\" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.",
+			"le Porcessus de configuration de Arch passe par la modification d'un grand nombre de ces fichiers pour que chaque application obtienne le comportement désiré.",
+			"J'ai principalement dû configurer les logiciels suivants :",
+			"<ul> <li> i3 : pour l'environnement graphique </li> <li> polybar : pour obtenir une barre des tâches </li> <li> rofi : pour obtenir un menu de lancement d'applications </li> <li> zsh : pour une invite de commande personnalisée </li> <li> neoVim : un éditeur de texte avancé pour du code </li> </ul>",
+			"<br> J'utilise Git pour stocker ces fichiers de configuration sur le cloud. De cette manière, je peut si besoin reproduire mon installation de Arch linux rapidement sur un autre ordinateur.",
+			"Ce projet m'a permis de compléter ma connaissance du fonctionnement de linux, mais aussi du fonctionnement d'un ordinateur et d'un système d'exploitation en général",
+			"J'ai aussi découvert l'écosystème et la philosophie de linux durant mes recherches pour des logiciels open-source.",
+			"<br> Ce projet a été un de mes projets les plus importants puisqu'il m'a permis d'obtenir l'environnement de travail que j'utilise quotidiennement, ce qui me permet d'être bien plus efficace que dans un environnement pré-configuré comme windows ou KDE Plasma."
 	],
     "techs": ["Linux", "Arch", "I3", "Polybar"]
 },
@@ -105,9 +169,27 @@
 {
     "id": "portfolio",
     "name": "Portfolio",
-    "source": "https://github.com/Exaether/portfolio",
-    "preview": [""],
-    "desc": [""],
+    "source": [
+			{
+				"name": "Code Source",
+				"link": "https://github.com/Exaether/portfolio"
+			}
+		],
+    "preview": [
+			"Le site web sur lequel vous vous trouvez.",
+			"Il présente ma personne , ainsi que tous les projets principaux que j'ai pu réaliser, mais aussi ceux en cours de réalisation."
+		],
+    "desc": [
+			"Ceci est mon portfolio.<br>",
+			"C'est le premier site web que j'ai pu réaliser, c'est donc avec lui que j'ai appris les différentes technologies web.",
+			"Ce site a donc grandement évolué avec mon apprentissage des languages comme le JavaScript.",
+			"Mon portfolio n'utilise pas de PHP, il est écrit entièrement en HTML et CSS, plus un script JavaScript qui permet de créer dynamiquement les cartes présentant mes projets, comme celle sur laquelle vous avez cliqué.",
+			"Cela permet aussi de pouvoir publier ce site sur un serveur n'ayant pas accès à un interpréteur PHP, comme GitHub Pages.",
+			"Le design du ste est déstiné à rester le plus sobre possible, pour que l'information présentée soit le centre d'intêret principal du visiteur.",
+			"<br> Bien qu'ayant été initié par ma formation, je continue de développer ce site web en temps que projet personnel.",
+			"La réalisation de mon portfolio m'a principalement appris les fondamentaux des technologies web, principalement le HTML, CSS et JS.",
+			"<br> Ce site porte une place spéciale parmis les différents projets web que j'ai pu réaliser, car il correspond à ma vision du web, étant une page simple ayant pour unique but de présenter une information."
+		],
     "techs": ["html", "css", "js"]
 },
 
@@ -117,11 +199,15 @@
 {
     "id": "maze",
     "name": "Maze generator",
-    "source": "https://github.com/Exaether/maze",
+    "source": [
+			{
+				"name": "Code Source",
+				"link": "https://github.com/Exaether/maze"
+			}
+		],
     "preview": [
 			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
-			"Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce par un seul et unique chemin.",
-			"<br> Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files."
+			"Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files."
 		],
     "desc": [
 			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
