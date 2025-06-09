@@ -29,38 +29,50 @@
 		</script>
 </head>
 <body>
-<nav>
-	<div class="toggle-container" id="themeToggle">
-		<svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-			<circle cx="12" cy="12" r="5"></circle>
-			<line x1="12" y1="1" x2="12" y2="3"></line>
-			<line x1="12" y1="21" x2="12" y2="23"></line>
-			<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-			<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-			<line x1="1" y1="12" x2="3" y2="12"></line>
-			<line x1="21" y1="12" x2="23" y2="12"></line>
-			<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-			<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+	<nav id="navBar">
+		<svg id="navBar-open" width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+			<line y2="2" x2="2" y1="2" x1="22"/>
+			<line y2="12" x2="2" y1="12" x1="22"/>
+			<line y2="22" x2="2" y1="22" x1="22"/>
 		</svg>
-		<svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-			<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-		</svg>
-	</div>
-    <ul>
-        <li>
-            <a href="#hub">Accueil</a>
-        </li>
-        <li>
-            <a href="#projects">projets</a>
-        </li>
-        <li>
-            <a href="#about">à propos</a>
-        </li>
-        <li>
-            <a href="#CV">CV</a>
-        </li>
-    </ul>
-</nav>
+		<div id="navBar-Buttons">
+			<svg id="navBar-close" class="closeButton" width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+				<line y2="12" x2="12" y1="1" x1="1"/>
+				<line y2="23" x2="1" y1="1" x1="23"/>
+				<line y2="23" x2="23" y1="15" x1="15"/>
+			</svg>
+			<div class="toggle-container" id="themeToggle">
+				<svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<circle cx="12" cy="12" r="5"></circle>
+					<line x1="12" y1="1" x2="12" y2="3"></line>
+					<line x1="12" y1="21" x2="12" y2="23"></line>
+					<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+					<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+					<line x1="1" y1="12" x2="3" y2="12"></line>
+					<line x1="21" y1="12" x2="23" y2="12"></line>
+					<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+					<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+				</svg>
+				<svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+				</svg>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<a href="#hub">Accueil</a>
+			</li>
+			<li>
+				<a href="#projects">projets</a>
+			</li>
+			<li>
+				<a href="#about">à propos</a>
+			</li>
+			<li>
+				<a href="#CV">CV</a>
+			</li>
+		</ul>
+	</nav>
 
 <main>
 	<section id="hub">
@@ -150,4 +162,5 @@
 </main>
 <script src="js/projects.js"> </script>
 <script src="js/theme.js"> </script>
+<script src="js/navbar.js"> </script>
 </body>

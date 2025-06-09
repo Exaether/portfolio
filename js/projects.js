@@ -71,7 +71,7 @@ function createProject(project) {
 
 	let projectsDiv = document.querySelector("section#projects");
 	projectsDiv.appendChild(preview);
-	projectsDiv.appendChild(details);
+	document.querySelector("body").appendChild(details);
 }
 
 let projects = getAllProjects();
