@@ -10,10 +10,16 @@
 		],
     "preview": [
 			"Shelf 4, Volume 10 est un projet de jeu de type hack&slash en 2D basé sur des mécaniques de coordination.",
-			"Le joueur peut contrôler plusieurs personnages simultannément pour effectuer des combos."
+			"Le joueur peut contrôler plusieurs personnages simultanément pour effectuer des combos."
 		],
     "desc": [
-			"Ce projet est le premier "
+			"C'est avec ce projet que je suis rentré pour la première fois dans le monde du jeu vidéo.",
+			"<i>Shelf 4, Volume 10</i> est un jeu en 2D, avec des mécaniques de combat complexes, j'ai donc dû passer par une phase de game design pour définir précisément ces mécaniques de jeu.",
+			"<br> Ce projet m'a introduit au monde du jeu vidéo, et m'a permis d'apprendre les méthodes de conception de jeux.",
+			"C'est après avoir découvert ces méthodes de travail que j'ai décidé de réaliser un projet de taille plus réduite avant celui-ci.",
+			"J'ai donc fait une pause dans la conception de ce jeu pour plutôt concevoir <i>Wall 5</i>.",
+			"<br> <i>Shelf 4, Volume 10</i> a été le projet qui a confirmé que le domaine du game dev et du game design est définitivement le domaine de l'informatique qui m'intéresse le plus."
+
 		],
     "techs": ["csharp", "unity"]
 },
@@ -31,11 +37,14 @@
 			}
 		],
     "preview": [
-			"Wall 5 est un projet de jeu déstiné à être une introduction à l'histoire et aux mécaniques de Shelf 4, Volume 10.",
-			"Ce jeu est pour moi aussi une introduction au game developement et à l'utilisation de Unity"
+			"Wall 5 est un projet de jeu destiné à être une introduction à l'histoire et aux mécaniques de Shelf 4, Volume 10.",
+			"Ce jeu est pour moi aussi une introduction au game developement et à l'utilisation du moteur Unity"
 		],
     "desc": [
-			""
+			"J'ai entrepris de réaliser ce projet durant la conception de <i>Shelf 4, Volume 10</i>, car ce dernier est un projet ambitieux, qui nécessite d'avoir déjà une certaine expérience dans le domaine du développement de jeux.",
+			"J'ai donc décidé de réaliser <i>Wall 5</i>, un jeu de taille réduite, qui me sert d'entraînement, et qui me permet d'apprendre l'utilisation du moteur de jeu Unity.",
+			"De plus, ce jeu est une occasion de créer une introduction à l'histoire de <i>Shelf 4, Volume 10</i>.",
+			"<br> Ce projet me permet donc de me familiariser avec Unity, mais aussi avec la rédaction d'un GDD (Game Design Document), un document résumant la conception et les choix techniques et artistiques du jeu."
 		],
     "techs": ["csharp", "unity"]
 },
@@ -49,13 +58,13 @@
     "source": [],
     "preview": [
 			"Le RKM Editor est un logiciel développé au sein du laboratoire G-SCOP.",
-			"Il permet de modéliser les connaissances sous forme d'un graphe appellé un RKM."
+			"Il permet de modéliser les connaissances sous forme d'un graphe appelé un RKM."
 		],
     "desc": [
 			"Durant mon stage de 2ème année de BUT informatique, j'ai rejoint le laboratoire G-SCOP.",
 			"Ce laboratoire développe de nouvelles méthodes de production en respectant une vision environnementale et de sobriété énergétique.",
-			"<br> Durant ce stage, j'ai travaillé sur le RKM Editor, un logicel permettant de modéliser la connaissance sous forme d'un graphe appelé un RKM.",
-			"Le logiciel est déstiné aux chercheurs du laboratoire, pour modéliser les processus de fabrication, mais aussi a d'autres entreprises, qui peuvent l'utiliser comme un outil d'aide à la décision",
+			"<br> Durant ce stage, j'ai travaillé sur le RKM Editor, un logiciel permettant de modéliser la connaissance sous forme d'un graphe appelé un RKM.",
+			"Le logiciel est destiné aux chercheurs du laboratoire, pour modéliser les processus de fabrication, mais aussi a d'autres entreprises, qui peuvent l'utiliser comme un outil d'aide à la décision.",
 			"Le RKM Editor est développé en C++ avec la bibliothèque graphique Qt.",
 			"<br> Durant le stage, j'ai travaillé seul sur le projet, des réunions fréquentes étaient faites pour discuter de l'avancement du développement, et pour proposer différentes améliorations possibles.",
 			"<br> J'ai pu découvrir que le code de l'application d'origine était très désorganisé et ne suivait pas d'architecture claire.",
@@ -80,19 +89,19 @@
 		],
     "preview": [
 			"Ludi-Map est un jeu interactif en ligne avec des cartes anciennes pour mettre en valeur la géographie et les monuments de notre région.",
-			"Ce site a été développé dans le cadre de la SAE du semeste 3 du BUT informatique."
+			"Ce site a été développé dans le cadre de la SAE du semestre 3 du BUT informatique."
 		],
     "desc": [
-			"Dans le carde de la SAE du semeste 3 du BUT informatique, nous devions développer un site web mettant en valeur le patrimoine francais.",
-			"C'est dans ce contexte que mon équipe a développé Ludi-Map, un jeu interactif présentant des cartes de l'état major des années 1820-1866.",
-			"Les règles du jeu sont les suivantes:",
-			"Un monument historique est choisis au hasard, et il est affiché sur une photo aérienne.",
-			"Le joueur doit alors retrouver ce même monument, mais cette fois sur une care des années 1820",
+			"Dans le cadre de la SAE du semestre 3 du BUT informatique, nous devions développer un site web mettant en valeur le patrimoine français.",
+			"C'est dans ce contexte que mon équipe a développé Ludi-Map, un jeu interactif présentant des cartes de l'état-major des années 1820-1866.",
+			"Les règles du jeu sont les suivantes :",
+			"Un monument historique est choisi au hasard, et il est affiché sur une photo aérienne.",
+			"Le joueur doit alors retrouver ce même monument, mais cette fois sur une carte des années 1820.",
 			"L'objectif de ce jeu est de présenter au joueur les différents monuments de notre région, ainsi que les paysages et la géographie environnante.",
 			"<br> Ludi-Map a été développé principalement en PHP et en JavaScript, ainsi que du HTML/CSS pour les interfaces. L'hébergement du serveur a été fait grâce à des machines virtuelles mises à disposition par l'IUT.",
-			"Pour le développement de ce site, j'ai fait parti d'une équipe de 6 personnes. Mon rôle dans cette équipe était principalement axé sur la partie back-end du site.",
-			"J'ai aussi joué le rôle de support aux différents membres du groupe, j'ai donc passé du temps à aider chaqun d'entre eux à régler différents problèmes.",
-			"Ce projet m'a permis d'approfondir mes compétences dans les technologies web telles que PHP et JavaScript. J'ai aussi pu améliorer mes compétences de gestion de projet et de travail en groupe, puisque une grande partie de cette SAE y étati consacrée."
+			"Pour le développement de ce site, j'ai fait partie d'une équipe de 6 personnes. Mon rôle dans cette équipe était principalement axé sur la partie back-end du site.",
+			"J'ai aussi joué le rôle de support aux différents membres du groupe, j'ai donc passé du temps à aider chacun d'entre eux à régler différents problèmes.",
+			"Ce projet m'a permis d'approfondir mes compétences dans les technologies web telles que PHP et JavaScript. J'ai aussi pu améliorer mes compétences de gestion de projet et de travail en groupe, puisque'une grande partie de cette SAE y était consacrée."
 		],
     "techs": ["php", "js", "html", "css"]
 },
@@ -118,13 +127,13 @@
 			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité.",
 			"<br> Un automate cellulaire est un ensemble de cellules qui évoluent génération après génération sur une grille selon certaines règles.",
 			"Il faut donc recalculer l'état de chaque cellule à chaque génération.",
-			"Le programme permer entre autre de :",
-			"<ul> <li> Choisir un set de règles </li> <li> Créer un set de règles </li> <li> Modifier manuellement l'état de chaque cellules </li> </ul>",
+			"Le programme permet entre autres de :",
+			"<ul> <li> Choisir un set de règles </li> <li> Créer un set de règles </li> <li> Modifier manuellement l'état de chaque cellule </li> </ul>",
 			"Ce projet était initialement prévu pour servir d'apprentissage de la bibliothèque Pygame, mais le résultat final étant satisfaisant, il est resté comme un de mes projets principaux.",
 			"N'ayant travaillé que seul sur ce projet, je n'ai mis en place aucune méthode d'organisation, bien que j'ai utilisé Git afin de sauvegarder mon travail.",
 			"J'ai tout de même été contraint par un temps limité pour la réalisation de ce projet.",
-			"<br> Lors de ce projet, j'ai prinipcalement aquis des compétences techniques, comme une meilleure maitrise du langage Python, et un apprentissage de la bibliothèque Pygame.",
-			"C'est aussi un des premier programmes de taille conséquente que j'ai concu, j'ai donc dû adopter des bonnes pratiques de programmation, tel que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
+			"<br> Lors de ce projet, j'ai principalement acquis des compétences techniques, comme une meilleure maîtrise du langage Python, et un apprentissage de la bibliothèque Pygame.",
+			"C'est aussi un des premiers programmes de taille conséquente que j'ai conçu, j'ai donc dû adopter des bonnes pratiques de programmation, telles que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
 			"<br> Enfin, j'ai apprécié ce projet principalement pour le fait de coder sans connaissance avancée de la bibliothèque, ce qui m'a obligé à me documenter pour réaliser ce programme."
 		],
     "techs": ["Python", "Pygame"]
@@ -144,20 +153,20 @@
 		],
     "preview": [
 			"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
-			"J'ai installé et configuré Arch linux sur mon ordinateur personnel.",
+			"J'ai installé et configuré Arch Linux sur mon ordinateur personnel.",
 			"J'ai donc commencé ce projet avec un écran noir et une ligne de commande. J'ai maintenant un environnement de bureau entièrement fonctionnel, optimisé et personnalisé."
 	],
     "desc": [
 			"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
-			"Arch linux est une distribution linux minimale qui a pour principe de n'inclure que le stricte nécéssaire au fonctionnement de l'ordinateur.",
-			"Je suis donc libre d'inclure tous les logiciels dont j'ai besoin, tout en gardant un grand contôle sur mon système.",
+			"Arch Linux est une distribution Linux minimale qui a pour principe de n'inclure que le strict nécessaire au fonctionnement de l'ordinateur.",
+			"Je suis donc libre d'inclure tous les logiciels dont j'ai besoin, tout en gardant un grand contrôle sur mon système.",
 			"<br> Le terme \"dotfiles\" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.",
-			"le Porcessus de configuration de Arch passe par la modification d'un grand nombre de ces fichiers pour que chaque application obtienne le comportement désiré.",
+			"Le processus de configuration de Arch passe par la modification d'un grand nombre de ces fichiers pour que chaque application obtienne le comportement désiré.",
 			"J'ai principalement dû configurer les logiciels suivants :",
 			"<ul> <li> i3 : pour l'environnement graphique </li> <li> polybar : pour obtenir une barre des tâches </li> <li> rofi : pour obtenir un menu de lancement d'applications </li> <li> zsh : pour une invite de commande personnalisée </li> <li> neoVim : un éditeur de texte avancé pour du code </li> </ul>",
-			"<br> J'utilise Git pour stocker ces fichiers de configuration sur le cloud. De cette manière, je peut si besoin reproduire mon installation de Arch linux rapidement sur un autre ordinateur.",
-			"Ce projet m'a permis de compléter ma connaissance du fonctionnement de linux, mais aussi du fonctionnement d'un ordinateur et d'un système d'exploitation en général",
-			"J'ai aussi découvert l'écosystème et la philosophie de linux durant mes recherches pour des logiciels open-source.",
+			"<br> J'utilise Git pour stocker ces fichiers de configuration sur le cloud. De cette manière, je peux si besoin reproduire mon installation de Arch Linux rapidement sur un autre ordinateur.",
+			"Ce projet m'a permis de compléter ma connaissance du fonctionnement de Linux, mais aussi du fonctionnement d'un ordinateur et d'un système d'exploitation en général.",
+			"J'ai aussi découvert l'écosystème et la philosophie de Linux durant mes recherches pour des logiciels open-source.",
 			"<br> Ce projet a été un de mes projets les plus importants puisqu'il m'a permis d'obtenir l'environnement de travail que j'utilise quotidiennement, ce qui me permet d'être bien plus efficace que dans un environnement pré-configuré comme windows ou KDE Plasma."
 	],
     "techs": ["Linux", "Arch", "I3", "Polybar"]
@@ -177,18 +186,18 @@
 		],
     "preview": [
 			"Le site web sur lequel vous vous trouvez.",
-			"Il présente ma personne , ainsi que tous les projets principaux que j'ai pu réaliser, mais aussi ceux en cours de réalisation."
+			"Il présente ma personne, ainsi que tous les projets principaux que j'ai pu réaliser, mais aussi ceux en cours de réalisation."
 		],
     "desc": [
 			"Ceci est mon portfolio.<br>",
 			"C'est le premier site web que j'ai pu réaliser, c'est donc avec lui que j'ai appris les différentes technologies web.",
-			"Ce site a donc grandement évolué avec mon apprentissage des languages comme le JavaScript.",
+			"Ce site a donc grandement évolué avec mon apprentissage des langages comme le JavaScript.",
 			"Mon portfolio n'utilise pas de PHP, il est écrit entièrement en HTML et CSS, plus un script JavaScript qui permet de créer dynamiquement les cartes présentant mes projets, comme celle sur laquelle vous avez cliqué.",
 			"Cela permet aussi de pouvoir publier ce site sur un serveur n'ayant pas accès à un interpréteur PHP, comme GitHub Pages.",
-			"Le design du ste est déstiné à rester le plus sobre possible, pour que l'information présentée soit le centre d'intêret principal du visiteur.",
-			"<br> Bien qu'ayant été initié par ma formation, je continue de développer ce site web en temps que projet personnel.",
+			"Le design du site est destiné à rester le plus sobre possible, pour que l'information présentée soit le centre d'intérêt principal du visiteur.",
+			"<br> Bien qu'ayant été initié par ma formation, je continue de développer ce site web en tant que projet personnel.",
 			"La réalisation de mon portfolio m'a principalement appris les fondamentaux des technologies web, principalement le HTML, CSS et JS.",
-			"<br> Ce site porte une place spéciale parmis les différents projets web que j'ai pu réaliser, car il correspond à ma vision du web, étant une page simple ayant pour unique but de présenter une information."
+			"<br> Ce site porte une place spéciale parmi les différents projets web que j'ai pu réaliser, car il correspond à ma vision du web, étant une page simple ayant pour unique but de présenter une information."
 		],
     "techs": ["html", "css", "js"]
 },
@@ -211,17 +220,17 @@
 		],
     "desc": [
 			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
-			"Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce par un seul et unique chemin.",
+			"Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce, par un seul et unique chemin.",
 			"<br> Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.",
-			"Le projet étant proposé dans le cadre du cours portant sur les structures d'arbre, nous avons dù modéliser le labyrinthe à partir d'un arbre.",
-			"Nous avons ensuite utilisé des piles et des files pour contruire récursivement le labyrinthe de manière à ce qu'il soit parfait.",
-			"<br> après le rendu de ce projet en cours de NSI, j'ai décidé de le continuer en implémentant un affichage graphique utilisant Pygame, ainsi que un joueur déplacable dans le labyrinthe.",
+			"Le projet étant proposé dans le cadre du cours portant sur les structures d'arbre, nous avons dû modéliser le labyrinthe à partir d'un arbre.",
+			"Nous avons ensuite utilisé des piles et des files pour construire récursivement le labyrinthe de manière à ce qu'il soit parfait.",
+			"<br> Après le rendu de ce projet en cours de NSI, j'ai décidé de le continuer en implémentant un affichage graphique utilisant Pygame, ainsi qu'un joueur déplaçable dans le labyrinthe.",
 			"<br> J'ai donc travaillé dans un groupe de trois personnes durant la moitié de ce projet, de plus, la date de rendu était imposée.",
-			"Nous avons donc mis en place une division des tâches, en se répartissant chaqun un fichier du projet à coder.",
+			"Nous avons donc mis en place une division des tâches, en se répartissant chacun un fichier du projet à coder.",
 			"Nous n'avons toutefois pas utilisé Git pour cette partie du projet.",
-			"<br> Dans la suite du projet, que j'ai réalisé seul, j'ai cette fois utilisé Git, mais pas d'autres méthode d'organisation.",
+			"<br> Dans la suite du projet, que j'ai réalisé seul, j'ai cette fois utilisé Git, mais pas d'autres méthodes d'organisation.",
 			"Lors de ce projet, mon rôle a été d'écrire l'algorithme de génération du labyrinthe en lui-même. J'ai donc pu mettre en application les cours de NSI traitant des arbres, piles et files.",
-			"J'ai pu aussi renforcer ma maitrise du langage python ainsi que mes pratiques de programmation.",
+			"J'ai pu aussi renforcer ma maîtrise du langage python ainsi que mes pratiques de programmation.",
 			"<br> Lorsque j'ai repris le projet personnellement, j'ai dû utiliser Pygame, et j'ai donc renforcé ma connaissance de cette bibliothèque."
 		],
     "techs": ["Python", "Pygame"]
