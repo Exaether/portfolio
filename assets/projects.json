@@ -1,7 +1,7 @@
 [
 {
-    "id": "s4v10",
-    "name": "Shelf 4, Volume 10",
+    "id": "s2v8",
+    "name": "Shelf 2, Volume 8",
     "source": [
 			{
 				"name": "Design Document",
@@ -9,16 +9,16 @@
 			}
 		],
     "preview": [
-			"Shelf 4, Volume 10 est un projet de jeu de type hack&slash en 2D basé sur des mécaniques de coordination.",
+			"Shelf 2, Volume 8 est un projet de jeu de type hack&slash en 2D basé sur des mécaniques de coordination.",
 			"Le joueur peut contrôler plusieurs personnages simultanément pour effectuer des combos."
 		],
     "desc": [
 			"C'est avec ce projet que je suis rentré pour la première fois dans le monde du jeu vidéo.",
-			"<i>Shelf 4, Volume 10</i> est un jeu en 2D, avec des mécaniques de combat complexes, j'ai donc dû passer par une phase de game design pour définir précisément ces mécaniques de jeu.",
+			"<i>Shelf 2, Volume 8</i> est un jeu en 2D, avec des mécaniques de combat complexes, j'ai donc dû passer par une phase de game design pour définir précisément ces mécaniques de jeu.",
 			"<br> Ce projet m'a introduit au monde du jeu vidéo, et m'a permis d'apprendre les méthodes de conception de jeux.",
 			"C'est après avoir découvert ces méthodes de travail que j'ai décidé de réaliser un projet de taille plus réduite avant celui-ci.",
 			"J'ai donc fait une pause dans la conception de ce jeu pour plutôt concevoir <i>Wall 5</i>.",
-			"<br> <i>Shelf 4, Volume 10</i> a été le projet qui a confirmé que le domaine du game dev et du game design est définitivement le domaine de l'informatique qui m'intéresse le plus."
+			"<br> <i>Shelf 2, Volume 8</i> a été le projet qui a confirmé que le domaine du game dev et du game design est définitivement le domaine de l'informatique qui m'intéresse le plus."
 
 		],
     "techs": ["csharp", "unity"]
@@ -28,8 +28,8 @@
 
 
 {
-    "id": "w5",
-    "name": "Wall 5",
+    "id": "w2",
+    "name": "Wall 2",
     "source": [
 			{
 				"name": "Design Document",
@@ -37,13 +37,13 @@
 			}
 		],
     "preview": [
-			"Wall 5 est un projet de jeu destiné à être une introduction à l'histoire et aux mécaniques de Shelf 4, Volume 10.",
+			"Wall 2 est un projet de jeu destiné à être une introduction à l'histoire et aux mécaniques de Shelf 2, Volume 8.",
 			"Ce jeu est pour moi aussi une introduction au game developement et à l'utilisation du moteur Unity"
 		],
     "desc": [
-			"J'ai entrepris de réaliser ce projet durant la conception de <i>Shelf 4, Volume 10</i>, car ce dernier est un projet ambitieux, qui nécessite d'avoir déjà une certaine expérience dans le domaine du développement de jeux.",
-			"J'ai donc décidé de réaliser <i>Wall 5</i>, un jeu de taille réduite, qui me sert d'entraînement, et qui me permet d'apprendre l'utilisation du moteur de jeu Unity.",
-			"De plus, ce jeu est une occasion de créer une introduction à l'histoire de <i>Shelf 4, Volume 10</i>.",
+			"J'ai entrepris de réaliser ce projet durant la conception de <i>Shelf 2, Volume 8</i>, car ce dernier est un projet ambitieux, qui nécessite d'avoir déjà une certaine expérience dans le domaine du développement de jeux.",
+			"J'ai donc décidé de réaliser <i>Wall 2</i>, un jeu de taille réduite, qui me sert d'entraînement, et qui me permet d'apprendre l'utilisation du moteur de jeu Unity.",
+			"De plus, ce jeu est une occasion de créer une introduction à l'histoire de <i>Shelf 2, Volume 8</i>.",
 			"<br> Ce projet me permet donc de me familiariser avec Unity, mais aussi avec la rédaction d'un GDD (Game Design Document), un document résumant la conception et les choix techniques et artistiques du jeu."
 		],
     "techs": ["csharp", "unity"]
