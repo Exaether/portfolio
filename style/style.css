@@ -1,25 +1,34 @@
-@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+@import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
+
 /*usage for ULTRAFONT: 'VCR OSD Mono'*/
+@font-face {
+	font-family: "HarmonyOS Sans SC";
+	src: url("fonts/HarmonyOS_Sans_SC_Thin.woff2") format("woff2");
+	font-weight: 100;
+	font-style: normal;
+}
 
 :root {
-    --main-color: #D65A00;
-	--secondary-color: #7C4A1A;
-	--warning-color: #FF3010;
-    --bg-color: #FDF6E4;
-    --bg-color-alt: #FBEBD2;
-	--bg: linear-gradient(180deg, #FDF6E4, #FBEBD2);
-	--bg-overlay: linear-gradient(180deg, #FDF6E430, #FDF6E470);
-	--text-color: #2B2B2B;
-	--accent-color: #E8A900;
-	--highlight-color: #C47A10;
+	--main-color: #d65a00;
+	--secondary-color: #7c4a1a;
+	--warning-color: #ff3010;
+	--bg-color: #fdf6e4;
+	--bg-color-alt: #fbebd2;
+	--bg: linear-gradient(180deg, #fdf6e4, #fbebd2);
+	--bg-overlay: linear-gradient(180deg, #fdf6e450, #fdf6e490);
+	--text-color: #2b2b2b;
+	--accent-color: #e8a900;
+	--highlight-color: #b46a00;
 }
 
 .dark-mode {
-    --bg-color: #1C1B1A;
-	--bg-color-alt: #312D25;
-	--bg: linear-gradient(180deg, #1C1B1A, #2A2826);
-	--bg-overlay: linear-gradient(180deg, #1C1B1A80, #1C1B1AE0);
-	--text-color: #F5E6C8;
+	--bg-color: #1c1b1a;
+	--bg-color-alt: #1a1d21;
+	--bg: linear-gradient(180deg, #121416, #15171a);
+
+	--bg-overlay: linear-gradient(180deg, #1c1b1ac0, #1c1b1af0);
+	--text-color: #f5e6c8;
+	--highlight-color: #c47a10;
 }
 
 /*-------------------COLORS-------------------*/
@@ -30,8 +39,6 @@ body {
 
 body::before {
 	background: var(--bg-overlay);
-	backdrop-filter: blur(1px);
-	-webkit-backdrop-filter: blur(1px);
 	box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
@@ -41,13 +48,13 @@ h1 {
 }
 
 .popupContent {
-	background: var(--bg-overlay), url("../assets/texture.svg"), var(--bg-color-alt);
+	background: var(--bg-overlay), var(--bg-color-alt);
 	border-color: var(--secondary-color);
 }
 
 .project {
 	border-color: var(--secondary-color);
-	background: var(--bg-overlay), url("../assets/texture.svg"), var(--bg-color-alt);
+	background: var(--bg-overlay), var(--bg-color-alt);
 }
 
 .button {
@@ -55,12 +62,12 @@ h1 {
 	color: var(--text-color);
 	text-align: center;
 	padding: 0px;
-	transition-duration: .5s;
+	transition-duration: 0.5s;
 }
 
 .closeButton {
 	color: var(--warning-color);
-	transition: color .3s;
+	transition: color 0.3s;
 }
 
 .closeButton:hover {
@@ -74,10 +81,11 @@ h1 {
 
 a {
 	color: var(--text-color);
-	transition-duration: .2s;
+	transition-duration: 0.2s;
 }
 
-a:hover, .toggle-container:hover {
+a:hover,
+.toggle-container:hover {
 	color: var(--highlight-color);
 }
 
@@ -88,6 +96,7 @@ a:hover, .toggle-container:hover {
 #navBar-open:hover {
 	color: var(--highlight-color);
 }
+
 /*--------------------------------------------*/
 
 html {
@@ -96,9 +105,11 @@ html {
 
 body {
 	margin: 0px;
-    font-family: sans-serif;
+	font-family: "HarmonyOS Sans SC", Arial, Helvetica, sans-serif;
 	font-size: 11pt;
-	transition: background .3s, color .3s;
+	transition:
+		background 0.3s,
+		color 0.3s;
 	position: relative;
 }
 
@@ -110,111 +121,117 @@ body::before {
 	width: 100vw;
 	height: 100vh;
 	z-index: 1;
-	transition: background .3s;
+	transition: background 0.3s;
 }
 
-main, nav {
+main,
+nav {
 	position: relative;
 }
 
 main {
-    overflow: hidden;
+	overflow: hidden;
 	z-index: 1;
 	width: 85%;
 }
 
 section {
-    padding: 5%;
+	padding: 5%;
 }
 
 #hub {
-    height: 100vh;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
 }
 
 @keyframes slideInFromAboveLeft {
-    0% {
-      transform: translate(-100%, -200%);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
+	0% {
+		transform: translate(-100%, -200%);
+	}
 
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
 
 h1 {
-    font-size: 6em;
-    margin: 0;
-	font-family: 'VCR OSD Mono';
-    animation: .7s ease-out 0s 1 slideInFromAboveLeft;
+	font-size: 6em;
+	margin: 0;
+	font-family: "VCR OSD Mono";
+	animation: 0.7s ease-out 0s 1 slideInFromAboveLeft;
 }
 
 #title {
-    font-size: 6em;
-    margin: 0;
-    width: 50%;
+	font-size: 6em;
+	margin: 0;
+	width: 50%;
 }
 
 #hub p {
-    width: 70%;
-    animation: .7s ease-in-out 0s 1 slideInFromLeft;
+	font-size: 1.5em;
+	width: 70%;
+	animation: 0.7s ease-in-out 0s 1 slideInFromLeft;
 }
 
 nav {
-    height: 100%;
-    width: 15%;
-    position: fixed;
+	height: 100%;
+	width: 15%;
+	position: fixed;
 	z-index: 2;
-    top: 0;
+	top: 0;
 	right: 0;
 	overflow-x: visible;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
-	transition: right .3s;
+	transition: right 0.3s;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	padding: 0;
 }
 
 nav ul li {
-    list-style-type: none;
-    margin-top: 5px;
+	list-style-type: none;
+	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 1em;
-    text-align: end;
-    width: 100%;
+	text-align: end;
+	width: 100%;
 }
 
 nav a {
-    padding: 1em;
-    color: inherit;
-    text-decoration: none;
-    transition-duration: 0.5s;
+	font-size: 1.5em;
+	padding: 1em;
+	color: inherit;
+	text-decoration: none;
+	transition-duration: 0.5s;
 	position: relative;
-	font-family: 'VCR OSD Mono';
+	font-family: "VCR OSD Mono";
 }
 
-nav a:hover, nav a.active {
-    padding-right: 4em;
+nav a:hover,
+nav a.active {
+	padding-right: 4em;
 }
 
 nav a::after {
@@ -229,162 +246,190 @@ nav a::after {
 }
 
 #projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .detailsProjet {
-    position: fixed;
-    z-index: 4;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.5
-    );
-    display: none;
-    align-items: center;
-    justify-content: center;
+	position: fixed;
+	z-index: 4;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	align-items: center;
+	justify-content: center;
 }
 
 .popupContent {
+	position: relative;
 	border-style: solid;
-	border-width: 3px;
-    border-radius: 20px;
-    padding: 20px;
-    width: 85%;
-    height: 80%;
+	border-width: 1.5px;
+	padding: 20px;
+	width: 85%;
+	height: 80%;
 }
 
 .detailsProjet .project-content {
-    padding: 0;
-    overflow: scroll;
-    height: 85%;
-    width: 80%;
-    margin: auto;
+	padding: 0;
+	overflow: scroll;
+	height: 85%;
+	width: 80%;
+	margin: auto;
+	font-size: 1.5em;
 }
 
 .detailsProjet .project-head {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-    padding: 0;
-    margin-bottom: 20px;
-    height: 10%;
+	padding: 0;
+	margin-bottom: 20px;
+	height: 10%;
 }
 
 .detailsProjet .project-head .language-logos {
-    display: flex;
-    gap: 10px;
+	display: flex;
+	gap: 10px;
 }
 
 .detailsProjet .project-head .language-logos img {
-    height: 4em;
+	height: 4em;
 }
 
 .detailsProjet hr {
-    width: 100%;
+	width: 100%;
 }
 
 .show {
-    display: flex;
+	display: flex;
 }
 
 .project {
-    width: 40%;
-	border-width: 3px;
+	width: 40%;
+	border-width: 1.5px;
 	border-style: solid;
-    border-radius: 20px;
-    padding:0;
-    margin: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition-duration: 0.5s;
+	padding: 0;
+	margin: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition-duration: 0.5s;
+	position: relative;
 }
 
 .project:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .project img {
-    width: 100%;
-    border-radius: 16px 16px 0px 0px;
+	width: 100%;
+	border-radius: 16px 16px 0px 0px;
 }
 
 .project h3 {
-    text-align: center;
+	text-align: center;
 }
 
 .project p {
-    margin: 10px;
-    text-align: justify;
+	margin: 10px;
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+.handle {
+	position: absolute;
+	background-color: var(--secondary-color);
+	height: 6px;
+	width: 6px;
+}
+
+.tr {
+	top: -4px;
+	right: -4px;
+}
+
+.tl {
+	top: -4px;
+	left: -4px;
+}
+
+.br {
+	bottom: -4px;
+	right: -4px;
+}
+
+.bl {
+	bottom: -4px;
+	left: -4px;
 }
 
 .button {
 	text-decoration: none;
 	cursor: pointer;
-    padding: 1em 3em;
-    margin: .5em;
-    border: none;
-    border-radius: 5px;
+	padding: 1em 3em;
+	margin: 0.5em;
+	border: none;
+	border-radius: 5px;
 }
 
 hr {
-    width: 60%;
-    border: 2px solid;
-    color: inherit;
-    border-radius: 5px;
+	width: 60%;
+	border: 2px solid;
+	color: inherit;
+	border-radius: 5px;
 }
 
 .btn-container {
-    display: flex;
+	display: flex;
 	justify-content: center;
 }
 
 #CV {
-    height: 100vh;
+	height: 100vh;
 }
 
 #about {
-    width: 50%;
-    margin: auto;
+	width: 50%;
+	margin: auto;
+	font-size: 1.5em;
 }
 
 #about li {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 /* Styles for the toggle container */
 .toggle-container {
 	margin-top: 1em;
-    cursor: pointer;
-	transition: color .3s;
+	cursor: pointer;
+	transition: color 0.3s;
 }
 
 /* Styles for the sun and moon icons */
-.sun-icon, .moon-icon {
-    width: 24px;
-    height: 24px;
-    transition: opacity .3s;
+.sun-icon,
+.moon-icon {
+	width: 24px;
+	height: 24px;
+	transition: opacity 0.3s;
 }
 
 /* Hide moon icon by default (light mode) */
 .moon-icon {
-    display: none;
+	display: none;
 }
+
 /* Show moon icon and hide sun icon in dark mode */
 .dark-mode .sun-icon {
-    display: none;
+	display: none;
 }
+
 .dark-mode .moon-icon {
-    display: inline-block;
+	display: inline-block;
 }
 
 #navBar-Buttons {
@@ -399,7 +444,7 @@ hr {
 	right: 100%;
 	padding: 1em;
 	color: var(--text-color);
-	transition: color .3s;
+	transition: color 0.3s;
 	display: none;
 	border-style: solid;
 	border-width: 3px;
@@ -410,6 +455,7 @@ hr {
 
 nav.hide {
 	right: -15%;
+
 	#navBar-open {
 		display: block;
 	}
@@ -419,30 +465,36 @@ nav.hide {
 	main {
 		width: 100%;
 	}
+
 	nav {
 		width: 100%;
 		background-color: var(--bg-color);
 	}
+
 	nav.hide {
 		right: -100%;
 	}
+
 	.popupContent {
 		width: 100%;
 		height: 100%;
 	}
+
 	.project {
 		width: 90%;
 	}
+
 	.detailsProjet .project-head {
 		flex-wrap: wrap;
 		height: 20%;
 	}
-	.detailsProjet .project-head h2{
+
+	.detailsProjet .project-head h2 {
 		order: 3;
 		width: 100%;
 	}
+
 	.detailsProjet .project-content {
-		width: 100%; 
+		width: 100%;
 	}
 }
-

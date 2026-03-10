@@ -1,19 +1,18 @@
 async function getAllProjects() {
-    const response = await fetch("./assets/projects.json");
-    if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`);
-    }
-    const projects = await response.json();
+	const response = await fetch("./assets/projects.json");
+	if (!response.ok) {
+		throw new Error(`Response status: ${response.status}`);
+	}
+	const projects = await response.json();
 
-    return projects;
+	return projects;
 }
 
 function createProject(project) {
-
-    let preview = document.createElement("article");
+	let preview = document.createElement("article");
 	preview.classList.add("project");
-    let img = document.createElement("img");
-    img.src = `assets/images/projects/${project.id}.png`;
+	let img = document.createElement("img");
+	img.src = `assets/images/projects/${project.id}.png`;
 	img.alt = project.id;
 	let openButton = document.createElement("button");
 	openButton.classList.add("button");
@@ -21,6 +20,10 @@ function createProject(project) {
 	openButton.innerText = "Plus";
 	preview.appendChild(img);
 	preview.innerHTML += `
+		<span class="handle tr"></span>
+		<span class="handle tl"></span>
+		<span class="handle br"></span>
+		<span class="handle bl"></span>
 		<h3>${project.name}</h3>
 		<hr>
 		<p>${project.preview.join("<br>")}</p>`;
@@ -30,6 +33,10 @@ function createProject(project) {
 	details.classList.add("detailsProjet");
 	details.innerHTML = `
 		<article class="popupContent">
+			<span class="handle tr"></span>
+			<span class="handle tl"></span>
+			<span class="handle br"></span>
+			<span class="handle bl"></span>
 			<section class="project-head">
 				<div class="language-logos">
 					<hr>
@@ -49,15 +56,17 @@ function createProject(project) {
 				<div class="btn-container">
 				</div>
 			</section>
-		</article>` ;
+		</article>`;
 
 	let languages = details.querySelector(".language-logos");
-	project.techs.forEach(element => {
-		languages.innerHTML = `<img src="assets/images/languages/${element}.png" alt="${element}">` + languages.innerHTML;
+	project.techs.forEach((element) => {
+		languages.innerHTML =
+			`<img src="assets/images/languages/${element}.png" alt="${element}">` +
+			languages.innerHTML;
 	});
-	
+
 	let links = details.querySelector(".btn-container");
-	project.source.forEach(element => {
+	project.source.forEach((element) => {
 		links.innerHTML += `<a href="${element.link}" class="button" >${element.name}</a>`;
 	});
 
@@ -75,11 +84,8 @@ function createProject(project) {
 }
 
 let projects = getAllProjects();
-getAllProjects().then(
-	function(projects) {
-		projects.forEach(project => {
-			createProject(project);
-		});
-	}
-);
-
+getAllProjects().then(function(projects) {
+	projects.forEach((project) => {
+		createProject(project);
+	});
+});
