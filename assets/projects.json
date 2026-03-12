@@ -82,6 +82,69 @@
 		]
 	},
 	{
+		"id": "zoot",
+		"name": "ZOOT",
+		"source": [
+			{
+				"name": "Site",
+				"link": "https://exaether.org"
+			},
+			{
+				"name": "Code source",
+				"link": "https://github.com/Exaether/ZOOT"
+			}
+		],
+		"preview": [
+			"ZOOT est un site web qui répertorie tous les personnages du jeu Arknights",
+			"Il permet de recher n'importe quel personnage de de visualiser ses attributs et compétences"
+		],
+		"desc": [
+			"Arknights est un jeu vidéo qui compte plusieurs centaines de personnages jouables, la communauté du jeu cherche donc sans cesse à connaitres leurs statistiques précises pour pouvoir les comparer.",
+			"Le jeu comptant aussi un grand nombre de paramètres à prndre en compte lorsqu'on mesure l'efficacité d'un personnage, il est extrèmement difficile de trouver une réponse claire sur ce sujet.",
+			"<br> C'est pour cela que j'ai entrepris de créer ZOOT, un site web qui répertorie tous les personnages jouables de Arknights, leur attributs, compétences et toutes les autres informations utiles à leur perfomance en jeu.",
+			"<br>D'un point de vue technique, j'ai réalisé ce site en JavaScript en utilisant le framework svelte, qui permet de gérer un affichage réactif extrèmement facilement.",
+			"De plus, j'utilise mon autre projet <i>Slumber Bridge</i> comme backend et source de données. Cela me permet de ne pas devoir gérer les fichiers json incompréhensibles que les autres sites similaires utilisent.",
+			"ZOOT est un projet que j'apprécie beaucoup malgré ma faible attirance par le développement web car c'est un projet qui a pour but d'être un outil pour une communauté, plutot qu'un site web commercial.",
+			"Ce projet m'a aussi permis de renforcer mes compétences en JavaScript et d'apprendre l'utilisation du framework svelte."
+		],
+		"techs": [
+			"svelte",
+			"js",
+			"css"
+		]
+	},
+	{
+		"id": "slumber-bridge",
+		"name": "Slumber Bridge",
+		"source": [
+			{
+				"name": "Lien",
+				"link": "https://exaether.org/api"
+			},
+			{
+				"name": "Code source",
+				"link": "https://github.com/Exaether/slumber-bridge"
+			}
+		],
+		"preview": [
+			"Slumber bridge est une API REST qui présente tous les personnages du jeu Arknights ainsi que leur données internes au jeu."
+		],
+		"desc": [
+			"Un certain nombre de personnes ont réalisé des sites web présentant les personnages ou autres données tirées du jeu vidéo Arknights. Ces donnés sont extraites du jeu directement et sockées sous forme de fichiers json.",
+			"Quiconque a déja cherché les données de jeu de Arknights peut savoir a quel point ces fichiers sont difficiles à lire.",
+			"De plus, ces fichiers totalisant une taille de plus de 200MO, tous les sites les utilisant sont souvent très groumands en bande passante.",
+			"<br>C'est pour cela que j'ai entrepris de créer une alternative en simplifiant ces gros fichiers sous forme d'une API REST.",
+			"Cette API web divise ces fichiers de plusieurs MO en plusieurs endpoints et ne retourne que les données utiles en filtrant les données redondantes, ainsi que cells non utiles en dehors du jeu (telles que les identifiants de prefabs)",
+			"<br>J'ai réalisé Slumber bridge en python grâce au framework FastAPI qui m'a permis de définir des endpoints extrèmement facilement. De plus, ce framework me permet de réaliser un server API en python, un language que j'apprécie bien plus que le classique JavaScript souvent utilisé pour le web.",
+			"La partie la plus difficile de ce projet à été de loin de comprendre l'organisation des données de base et de les réorganiser pour les rendre plus compréensibles et lisibles.",
+			"C'est grâce a ce projet que j'ai pu réaliser bien plus simplement un site web présentant ces données graphiquement: ZOOT."
+		],
+		"techs": [
+			"fastapi",
+			"Python"
+		]
+	},
+	{
 		"id": "ludimap",
 		"name": "Ludi-Map",
 		"source": [

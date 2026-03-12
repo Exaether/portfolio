@@ -1,48 +1,51 @@
 <!DOCTYPE html>
+
 <head>
 	<html lang="en">
-		<meta charset="UTF-8">
-		<title>Portfolio Johan Le Fol</title>
-		<link rel="icon" href="assets/favicon.ico">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" href="style/style.css">
-		<script
-			  src="https://code.jquery.com/jquery-3.7.1.min.js"
-			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			  crossorigin="anonymous"></script>
-		<script>
-			$(window).on("scroll", function() {
-				var currentPos = $(window).scrollTop();
+	<meta charset="UTF-8">
+	<title>Portfolio Johan Le Fol</title>
+	<link rel="icon" href="assets/favicon.svg">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script>
+		$(window).on("scroll", function () {
+			var currentPos = $(window).scrollTop();
 
-				$('nav a').each(function() {
-					var sectionLink = $(this);
-					var section = $(sectionLink.attr('href'));
+			$('nav a').each(function () {
+				var sectionLink = $(this);
+				var section = $(sectionLink.attr('href'));
 
-					if(section.position().top <= currentPos + 8 && section.position().top + section.height() >= currentPos + 8) {
-						$('nav a').removeClass('active');
-						sectionLink.addClass('active');
-					} else {
-						sectionLink.removeClass('active');
-					}
-				});        
+				if (section.position().top <= currentPos + 8 && section.position().top + section.height() >= currentPos + 8) {
+					$('nav a').removeClass('active');
+					sectionLink.addClass('active');
+				} else {
+					sectionLink.removeClass('active');
+				}
 			});
-		</script>
+		});
+	</script>
 </head>
+
 <body>
 	<nav id="navBar">
-		<svg id="navBar-open" width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
-			<line y2="2" x2="2" y1="2" x1="22"/>
-			<line y2="12" x2="2" y1="12" x1="22"/>
-			<line y2="22" x2="2" y1="22" x1="22"/>
+		<svg id="navBar-open" width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="3"
+			stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+			<line y2="2" x2="2" y1="2" x1="22" />
+			<line y2="12" x2="2" y1="12" x1="22" />
+			<line y2="22" x2="2" y1="22" x1="22" />
 		</svg>
 		<div id="navBar-Buttons">
-			<svg id="navBar-close" class="closeButton" width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
-				<line y2="12" x2="12" y1="1" x1="1"/>
-				<line y2="23" x2="1" y1="1" x1="23"/>
-				<line y2="23" x2="23" y1="15" x1="15"/>
+			<svg id="navBar-close" class="closeButton" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+				stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+				<line y2="12" x2="12" y1="1" x1="1" />
+				<line y2="23" x2="1" y1="1" x1="23" />
+				<line y2="23" x2="23" y1="15" x1="15" />
 			</svg>
 			<div class="toggle-container" id="themeToggle">
-				<svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+					fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 					<circle cx="12" cy="12" r="5"></circle>
 					<line x1="12" y1="1" x2="12" y2="3"></line>
 					<line x1="12" y1="21" x2="12" y2="23"></line>
@@ -53,7 +56,8 @@
 					<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
 					<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
 				</svg>
-				<svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+					fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 					<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 				</svg>
 			</div>
@@ -74,103 +78,103 @@
 		</ul>
 	</nav>
 
-<main>
-	<section id="hub">
-		<h1>
-			Johan Le Fol
-		</h1>
-		<p>
-			Étudiant en BUT informatique à l'IUT2 de Grenoble
+	<main>
+		<section id="hub">
+			<h1>
+				Johan Le Fol
+			</h1>
+			<p>
+				Étudiant en BUT informatique à l'IUT2 de Grenoble
+				<br>
+				Développeur de jeux vidéos
+			</p>
+		</section>
+
+		<hr>
+
+		<section id="projects">
+		</section>
+
+		<hr>
+
+		<section id="about">
+			<p>
+			<h2>
+				À propos
+			</h2>
+			Je suis <b>Johan Le Fol</b>, actuellement étudiant en première année de BUT informatique à l'IUT 2 de
+			Grenoble. Passionné d'algorithmie et de programmation,
+			je cherche toujours à savoir comment fonctionne ce que j'utilise.
 			<br>
-			Développeur de jeux vidéos
-		</p>
-	</section>
-
-    <hr>
-
-    <section id="projects">
-	</section>
-    
-    <hr>
-
-    <section id="about">
-        <p>
-            <h2>
-                À propos
-            </h2>
-            Je suis <b>Johan Le Fol</b>, actuellement étudiant en première année de BUT informatique à l'IUT 2 de Grenoble. Passionné d'algorithmie et de programmation,
-            je cherche toujours à savoir comment fonctionne ce que j'utilise.
-            <br>
-			Étant passionné de jeux et d'histoires de fiction, j'ai l'intention de m'orienter dans le secteur du jeu vidéo, car c'est le domaine de l'informatique  qui a le plus de sens à mes yeux.
+			Étant passionné de jeux et d'histoires de fiction, j'ai l'intention de m'orienter dans le secteur du jeu
+			vidéo, car c'est le domaine de l'informatique qui a le plus de sens à mes yeux.
 			<br>
-			Grâce a mes projets et durant ces deux premières années de BUT informatique, j'ai pu acquérir un certain nombre de compétences techniques, telles que :
-            <ul>
-                <li>
-                    <b>Langages : </b>Python, Java, HTML, CSS, C/C++, SQL
-                </li>
+			Grâce a mes projets et durant ces deux premières années de BUT informatique, j'ai pu acquérir un certain
+			nombre de compétences techniques, telles que :
+			<ul>
+				<li>
+					<b>Langages : </b>Python, Java, HTML, CSS, C/C++, SQL
+				</li>
 				<li>
 					<b>Moteurs de jeu : </b> Godot, Unity
 				</li>
-                <li>
-                    <b>Programmation : </b>conception avec UML, Qualité de code, Conception d'algorithmes, Structures de données complexes
-                </li>
-                <li>
-                    <b>Réseaux : </b>connaissance en architecture des réseaux, Protocoles de communication
-                </li>
-                <li>
-                    <b>Bases de données : </b>PostgreSQL, gestion de base de données relationelle, sécurité, permissions
-                </li>
-                <li>
-                    <b>Gestion de projet : </b>méthodologie Agile
-                </li>
-            </ul>
+				<li>
+					<b>Programmation : </b>conception avec UML, Qualité de code, Conception d'algorithmes, Structures de
+					données complexes
+				</li>
+				<li>
+					<b>Réseaux : </b>connaissance en architecture des réseaux, Protocoles de communication
+				</li>
+				<li>
+					<b>Bases de données : </b>PostgreSQL, gestion de base de données relationelle, sécurité, permissions
+				</li>
+				<li>
+					<b>Gestion de projet : </b>méthodologie Agile
+				</li>
+			</ul>
 
-            Au cours de mes différents projets personnels, ainsi que dans mon cursus, j'ai pu acquérir un certain nombre de compétences transversales :
+			Au cours de mes différents projets personnels, ainsi que dans mon cursus, j'ai pu acquérir un certain nombre
+			de compétences transversales :
 
-            <ul>
-                <li>
-                    Travail de groupe
-                </li>
-                <li>
-                    Recherche de solutions algorithmiques
-                </li>
-                <li>
-                    Esprit critique quant au travail réalisé
-                </li>
-                <li>
-                    Apprentissage continu
-                </li>
-            </ul>
+			<ul>
+				<li>
+					Travail de groupe
+				</li>
+				<li>
+					Recherche de solutions algorithmiques
+				</li>
+				<li>
+					Esprit critique quant au travail réalisé
+				</li>
+				<li>
+					Apprentissage continu
+				</li>
+			</ul>
 
-            <h2>
-                Liens
-            </h2>
-            <ul>
-                <li>
-                    <b>Mail : </b><a href="mailto:johan.le-fol@etu.univ-grenoble-alpes.fr">johan.le-fol@etu.univ-grenoble-alpes.fr</a>
-                </li>
-                <li>
-                    <b>GitHub : </b><a href="https://github.com/Exaether">https://github.com/Exaether</a>
-                </li>
-            </ul>
-            
-        </p>
-    </section>
+			<h2>
+				Liens
+			</h2>
+			<ul>
+				<li>
+					<b>Mail : </b><a
+						href="mailto:johan.le-fol@etu.univ-grenoble-alpes.fr">johan.le-fol@etu.univ-grenoble-alpes.fr</a>
+				</li>
+				<li>
+					<b>GitHub : </b><a href="https://github.com/Exaether">https://github.com/Exaether</a>
+				</li>
+			</ul>
 
-    <hr>
+			</p>
+		</section>
 
-    <section id="CV">
-        <embed
-            src="assets/CV.pdf"
-            type="application/pdf"
-            frameBorder="0"
-            scrolling="auto"
-            height="100%"
-            width="100%"
-        ></embed>
-    </section>
-</main>
-<script src="js/projects.js"> </script>
-<script src="js/theme.js"> </script>
-<script src="js/navbar.js"> </script>
+		<hr>
+
+		<section id="CV">
+			<embed src="assets/CV.pdf" type="application/pdf" frameBorder="0" scrolling="auto" height="100%"
+				width="100%"></embed>
+		</section>
+	</main>
+	<script src="js/projects.js"> </script>
+	<script src="js/theme.js"> </script>
+	<script src="js/navbar.js"> </script>
 </body>
