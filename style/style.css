@@ -328,7 +328,6 @@ nav a::after {
 
 .project img {
 	width: 100%;
-	border-radius: 16px 16px 0px 0px;
 }
 
 .project h3 {
@@ -403,6 +402,29 @@ hr {
 	margin-top: 10px;
 }
 
+#about .technos {
+	margin-top: 0.5em;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	gap: 0.5em;
+	height: 4em;
+
+	.image p {
+		display: none;
+		text-align: center;
+		margin: 0;
+	}
+
+	.image:hover p {
+		display: block;
+	}
+
+	img {
+		height: 3em;
+	}
+}
+
 /* Styles for the toggle container */
 .toggle-container {
 	margin-top: 1em;
@@ -459,6 +481,11 @@ nav.hide {
 	#navBar-open {
 		display: block;
 	}
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
 }
 
 @media only screen and (max-width: 720px) {
