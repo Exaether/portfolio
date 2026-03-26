@@ -1,14 +1,17 @@
 @import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
+@import url("https://fonts.cdnfonts.com/css/harmonyos-sans");
 
-/*usage for ULTRAFONT: 'VCR OSD Mono'*/
 @font-face {
-	font-family: "HarmonyOS Sans SC";
-	src: url("fonts/HarmonyOS_Sans_SC_Thin.woff2") format("woff2");
-	font-weight: 100;
+	font-family: "Endfield";
+	src: url("../fonts/EndfieldByButan.ttf") format("truetype");
+	font-weight: normal;
 	font-style: normal;
 }
 
 :root {
+	--font: "HarmonyOS Sans", Arial, Helvetica, sans-serif;
+	--font-title: "VCR OSD Mono";
+	--font-crypt: "Endfield";
 	--main-color: #d65a00;
 	--secondary-color: #b25f11;
 	--warning-color: #ff3010;
@@ -113,7 +116,7 @@ html {
 
 body {
 	margin: 0px;
-	font-family: "HarmonyOS Sans SC", Arial, Helvetica, sans-serif;
+	font-family: var(--font);
 	font-size: 11pt;
 	transition:
 		background 0.3s,
@@ -157,6 +160,26 @@ section {
 	gap: 20px;
 }
 
+#title .letter {
+	display: inline-block;
+	font-family: var(--font-crypt);
+	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
+}
+
+@keyframes glitch {
+	0% {
+		font-family: var(--font-title);
+	}
+
+	50% {
+		font-family: var(--font-crypt);
+	}
+
+	100% {
+		font-family: var(--font-title);
+	}
+}
+
 @keyframes slideInFromAboveLeft {
 	0% {
 		transform: translate(-100%, -200%);
@@ -180,8 +203,19 @@ section {
 h1 {
 	font-size: 6em;
 	margin: 0;
-	font-family: "VCR OSD Mono";
-	animation: 0.7s ease-out 0s 1 slideInFromAboveLeft;
+	font-family: var(--font-title);
+	height: 1.5em;
+}
+
+h2 {
+	margin-top: 0;
+	font-family: var(--font-title);
+}
+
+h2.crypt {
+	margin: 0;
+	font-family: var(--font-crypt);
+	font-size: 3em;
 }
 
 #hub p {
@@ -214,11 +248,12 @@ nav ul {
 
 nav ul li {
 	list-style-type: none;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 1em;
 	text-align: end;
 	width: 100%;
+	height: 1.5em;
 }
 
 nav a {
@@ -228,7 +263,15 @@ nav a {
 	text-decoration: none;
 	transition-duration: 0.5s;
 	position: relative;
-	font-family: "VCR OSD Mono";
+	font-family: var(--font-title);
+}
+
+nav a .letter {
+	display: inline-block;
+}
+
+nav a:hover .letter {
+	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
 }
 
 nav a:hover,
@@ -301,6 +344,11 @@ nav a::after {
 
 .detailsProjet .project-head .language-logos img {
 	height: 4em;
+}
+
+.detailsProjet .project-head h2 {
+	margin-top: 1em;
+	font-size: 3em;
 }
 
 .detailsProjet hr {
@@ -515,6 +563,11 @@ iframe {
 	nav {
 		width: 100%;
 		background-color: var(--bg-color);
+	}
+
+	h1 {
+		height: 3em;
+		width: 75%;
 	}
 
 	nav.hide {
