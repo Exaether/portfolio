@@ -11,7 +11,7 @@
 :root {
 	--font: "HarmonyOS Sans", Arial, Helvetica, sans-serif;
 	--font-title: "VCR OSD Mono";
-	--font-crypt: "Endfield";
+	--font-crypt: "Endfield", "VCR OSD Mono";
 	--main-color: #d65a00;
 	--secondary-color: #b25f11;
 	--warning-color: #ff3010;
@@ -166,6 +166,16 @@ section {
 	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
 }
 
+.subtitle {
+	font-size: 1.5em;
+}
+
+.subtitle .letter {
+	display: inline-block;
+	font-family: var(--font-crypt);
+	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
+}
+
 @keyframes glitch {
 	0% {
 		font-family: var(--font-title);
@@ -177,26 +187,6 @@ section {
 
 	100% {
 		font-family: var(--font-title);
-	}
-}
-
-@keyframes slideInFromAboveLeft {
-	0% {
-		transform: translate(-100%, -200%);
-	}
-
-	100% {
-		transform: translate(0, 0);
-	}
-}
-
-@keyframes slideInFromLeft {
-	0% {
-		transform: translateX(-100%);
-	}
-
-	100% {
-		transform: translateX(0);
 	}
 }
 
@@ -216,12 +206,6 @@ h2.crypt {
 	margin: 0;
 	font-family: var(--font-crypt);
 	font-size: 3em;
-}
-
-#hub p {
-	font-size: 1.5em;
-	width: 70%;
-	animation: 0.7s ease-in-out 0s 1 slideInFromLeft;
 }
 
 nav {
@@ -542,6 +526,10 @@ hr {
 	border-bottom-left-radius: 1em;
 }
 
+nav #navBar-close {
+	display: none;
+}
+
 nav.hide {
 	right: -15%;
 
@@ -572,6 +560,10 @@ iframe {
 
 	nav.hide {
 		right: -100%;
+	}
+
+	nav #navBar-close {
+		display: block;
 	}
 
 	.popupContent {

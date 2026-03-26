@@ -1,9 +1,17 @@
 const title = document.getElementById("title");
-const text = title.textContent.trim();
+const titleText = title.textContent.trim();
 
-title.innerHTML = [...text]
-	.map((c, i) => createLetter(c, i, 0.4, 0.4, 2, 2, 0.1))
+title.innerHTML = [...titleText]
+	.map((c, i) => createLetter(c, i, 0.3, 0.3, 2, 2, 0.1))
 	.join("");
+
+document.querySelectorAll(".subtitle").forEach((subtitle) => {
+	const text = subtitle.textContent.trim();
+
+	subtitle.innerHTML = [...text]
+		.map((c, i) => createLetter(c, i, 0.1, 0.1, 2, 1, 0.1))
+		.join("");
+});
 
 document.querySelectorAll("nav a").forEach((link) => {
 	const text = link.textContent.trim();
@@ -14,6 +22,7 @@ document.querySelectorAll("nav a").forEach((link) => {
 });
 
 function createLetter(c, i, minDur, varDur, minIt, varIt, multDel) {
+	if (c === " ") return " ";
 	if (c === " ") return " ";
 
 	const dur = (minDur + Math.random() * varDur).toFixed(2);
