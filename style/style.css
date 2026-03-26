@@ -10,25 +10,25 @@
 
 :root {
 	--main-color: #d65a00;
-	--secondary-color: #7c4a1a;
+	--secondary-color: #b25f11;
 	--warning-color: #ff3010;
-	--bg-color: #fdf6e4;
-	--bg-color-alt: #fbebd2;
-	--bg: linear-gradient(180deg, #fdf6e4, #fbebd2);
-	--bg-overlay: linear-gradient(180deg, #fdf6e450, #fdf6e490);
-	--text-color: #2b2b2b;
+	--bg-color: #ffd8f7;
+	--bg-color-alt: #f9d1f1;
+	--bg: #ffd8f7;
+	--bg-transparent: #ffd8f770;
+	--bg-overlay: linear-gradient(180deg, #ffe5f940, #ffe5f960);
+	--text-color: #181519;
 	--accent-color: #e8a900;
-	--highlight-color: #b46a00;
+	--highlight-color: #cc7700;
 }
 
 .dark-mode {
-	--bg-color: #1c1b1a;
-	--bg-color-alt: #1a1d21;
-	--bg: linear-gradient(180deg, #121416, #15171a);
-
-	--bg-overlay: linear-gradient(180deg, #1c1b1ac0, #1c1b1af0);
+	--bg-color: #181519;
+	--bg-color-alt: #1d1a21;
+	--bg: #181519;
+	--bg-transparent: #18151970;
+	--bg-overlay: linear-gradient(180deg, #181519a0, #181519d0);
 	--text-color: #f5e6c8;
-	--highlight-color: #c47a10;
 }
 
 /*-------------------COLORS-------------------*/
@@ -48,16 +48,17 @@ h1 {
 }
 
 .popupContent {
-	background: var(--bg-overlay), var(--bg-color-alt);
+	background: var(--bg-color-alt);
 	border-color: var(--secondary-color);
 }
 
 .project {
+	background: var(--bg-color-alt);
 	border-color: var(--secondary-color);
-	background: var(--bg-overlay), var(--bg-color-alt);
 }
 
 .button {
+	border-color: var(--secondary-color);
 	background-color: var(--main-color);
 	color: var(--text-color);
 	text-align: center;
@@ -95,6 +96,13 @@ a:hover,
 
 #navBar-open:hover {
 	color: var(--highlight-color);
+}
+
+.blur-background {
+	border-radius: 200px;
+	box-shadow: 0px 0px 100px 100px var(--bg-transparent);
+	background-color: var(--bg-transparent);
+	backdrop-filter: blur(0.5px);
 }
 
 /*--------------------------------------------*/
@@ -174,12 +182,6 @@ h1 {
 	margin: 0;
 	font-family: "VCR OSD Mono";
 	animation: 0.7s ease-out 0s 1 slideInFromAboveLeft;
-}
-
-#title {
-	font-size: 6em;
-	margin: 0;
-	width: 50%;
 }
 
 #hub p {
@@ -368,12 +370,13 @@ nav a::after {
 }
 
 .button {
+	position: relative;
 	text-decoration: none;
 	cursor: pointer;
 	padding: 1em 3em;
 	margin: 0.5em;
-	border: none;
-	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
 }
 
 hr {
@@ -392,36 +395,52 @@ hr {
 	height: 100vh;
 }
 
-#about {
+#stack,
+#about,
+#links {
 	width: 50%;
 	margin: auto;
 	font-size: 1.5em;
 }
 
-#about li {
+#stack li {
 	margin-top: 10px;
 }
 
-#about .technos {
+#stack .technos {
 	margin-top: 0.5em;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: start;
 	gap: 0.5em;
-	height: 4em;
+
+	.image {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 3em;
+	}
 
 	.image p {
 		display: none;
 		text-align: center;
 		margin: 0;
+		height: 0;
+		transition: height 0.3s;
 	}
 
 	.image:hover p {
 		display: block;
+		height: 1em;
 	}
 
 	img {
 		height: 3em;
+		transition: height 0.3s;
+	}
+
+	.image:hover img {
+		height: 2em;
 	}
 }
 
@@ -523,5 +542,11 @@ iframe {
 
 	.detailsProjet .project-content {
 		width: 100%;
+	}
+
+	#stack,
+	#about,
+	#links {
+		width: 80%;
 	}
 }

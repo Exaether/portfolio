@@ -15,9 +15,15 @@ function createProject(project) {
 	img.src = `assets/images/projects/${project.id}.png`;
 	img.alt = project.id;
 	let openButton = document.createElement("button");
+	openButton.innerHTML = `
+		Plus
+		<span class="handle tr"></span>
+		<span class="handle tl"></span>
+		<span class="handle br"></span>
+		<span class="handle bl"></span>
+		`;
 	openButton.classList.add("button");
 	openButton.classList.add("openButton");
-	openButton.innerText = "Plus";
 	preview.appendChild(img);
 	preview.innerHTML += `
 		<span class="handle tr"></span>
@@ -67,7 +73,13 @@ function createProject(project) {
 
 	let links = details.querySelector(".btn-container");
 	project.source.forEach((element) => {
-		links.innerHTML += `<a href="${element.link}" class="button" >${element.name}</a>`;
+		links.innerHTML += `<a href="${element.link}" class="button" >
+			${element.name}
+			<span class="handle tr"></span>
+			<span class="handle tl"></span>
+			<span class="handle br"></span>
+			<span class="handle bl"></span>
+			</a>`;
 	});
 
 	let closeButton = details.querySelector(".closeButton");
