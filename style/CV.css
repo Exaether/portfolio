@@ -1,0 +1,207 @@
+@import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
+@import url("https://fonts.cdnfonts.com/css/harmonyos-sans");
+
+@font-face {
+	font-family: "Endfield";
+	src: url("../fonts/EndfieldByButan.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--font: "HarmonyOS Sans", Arial, Helvetica, sans-serif;
+	--font-title: "VCR OSD Mono";
+	--font-crypt: "Endfield", "VCR OSD Mono";
+	--main-color: #d65a00;
+	--secondary-color: #b25f11;
+	--warning-color: #ff3010;
+	--bg-color: #ffd8f7;
+	--bg-color-alt: #d8add0;
+	--bg: #ffd8f7;
+	--bg-transparent: #ffd8f770;
+	--bg-overlay: linear-gradient(180deg, #ffe5f940, #ffe5f960);
+	--text-color: #181519;
+	--text-secondary-color: #484549;
+	--accent-color: #e8a900;
+	--highlight-color: #cc7700;
+}
+
+.dark-mode {
+	--bg-color: #181519;
+	--bg-color-alt: #1d1a21;
+	--bg: #181519;
+	--bg-transparent: #18151970;
+	--bg-overlay: linear-gradient(180deg, #181519a0, #181519d0);
+	--text-color: #f5e6c8;
+	--text-secondary-color: #f5f6f8;
+}
+
+/*---------------------------------------------------------------------*/
+
+body {
+	font-family: var(--font);
+	margin: 0;
+	font-size: 1.2vw;
+	width: 100vw;
+	height: 141vw;
+	background-color: var(--bg-color);
+	/*
+font-size: 7pt;
+width: 210mm;
+height: 297mm;
+*/
+	display: flex;
+}
+
+/*-------------------------SIDE PANEL-------------------------*/
+
+#sidepanel {
+	width: 25%;
+	background-color: var(--bg-color-alt);
+	border-radius: 5px;
+	border-right: 5px solid var(--main-color);
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#photo {
+	border: 1px solid var(--secondary-color);
+	border-radius: 50%;
+	width: 70%;
+}
+
+#infos {
+	width: 80%;
+
+	p {
+		margin-bottom: 0;
+		margin-top: 0.5em;
+	}
+
+	p::before {
+		font-family: "JetBrainsMono Nerd Font";
+		font-size: 1.5em;
+		margin-right: 0.5em;
+	}
+}
+
+#mail::before {
+	content: "\f42f";
+}
+
+#tel::before {
+	content: "\f095";
+}
+
+#place::before {
+	content: "\f041";
+}
+
+#github::before {
+	content: "\e709";
+}
+
+#website::before {
+	content: "\f44c";
+}
+
+.sidesection {
+	width: 90%;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 0;
+		justify-content: center;
+		gap: 1em;
+		row-gap: 1em;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 0.2em;
+		padding: 0.2em;
+		border-radius: 10px;
+		background-color: var(--bg-color);
+		width: 40%;
+	}
+
+	li img {
+		height: 2em;
+	}
+
+	li p {
+		margin: 0;
+	}
+}
+
+/*-------------------------MAIN PANEL-------------------------*/
+
+#mainpanel {
+	padding-inline: 1em;
+	width: 70%;
+}
+
+#title {
+	background-color: var(--secondary-color);
+	padding: 1em;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+h3 {
+	font-size: 2em;
+	width: 100%;
+	border-bottom: 2px solid var(--text-color);
+}
+
+#skills li {
+	margin-top: 1em;
+}
+
+.item {
+	margin-top: 2em;
+	position: relative;
+	border: 1px solid var(--secondary-color);
+	padding: 0.5em;
+
+	h4 {
+		font-size: 1.5em;
+		margin: 0;
+	}
+
+	.location {
+		margin-top: 0.3em;
+		color: var(--text-secondary-color);
+		font-style: italic;
+	}
+
+	.location::before {
+		font-style: normal;
+		font-size: 1.5em;
+		margin-right: 0.5em;
+		content: "\f041";
+		font-family: "JetBrainsMono Nerd Font";
+	}
+
+	.date {
+		font-size: 1.2em;
+		background-color: var(--highlight-color);
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0.3em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}

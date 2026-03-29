@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
 @import url("https://fonts.cdnfonts.com/css/harmonyos-sans");
 
-@font-face {
+@import "https://www.nerdfonts.com/assets/css/webfont.css"@font-face {
 	font-family: "Endfield";
 	src: url("../fonts/EndfieldByButan.ttf") format("truetype");
 	font-weight: normal;
@@ -9,7 +9,8 @@
 }
 
 :root {
-	--font: "HarmonyOS Sans", Arial, Helvetica, sans-serif;
+	--font:
+		"HarmonyOS Sans", Arial, Helvetica, sans-serif, "JetBrainsMono Nerd Font";
 	--font-title: "VCR OSD Mono";
 	--font-crypt: "Endfield", "VCR OSD Mono";
 	--main-color: #d65a00;
