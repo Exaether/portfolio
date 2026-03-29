@@ -1,598 +1,598 @@
 @import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
 @import url("https://fonts.cdnfonts.com/css/harmonyos-sans");
 
-@import "https://www.nerdfonts.com/assets/css/webfont.css"@font-face {
-	font-family: "Endfield";
-	src: url("../fonts/EndfieldByButan.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+  font-family: "Endfield";
+  src: url("../fonts/EndfieldByButan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-	--font:
-		"HarmonyOS Sans", Arial, Helvetica, sans-serif, "JetBrainsMono Nerd Font";
-	--font-title: "VCR OSD Mono";
-	--font-crypt: "Endfield", "VCR OSD Mono";
-	--main-color: #d65a00;
-	--secondary-color: #b25f11;
-	--warning-color: #ff3010;
-	--bg-color: #ffd8f7;
-	--bg-color-alt: #f9d1f1;
-	--bg: #ffd8f7;
-	--bg-transparent: #ffd8f770;
-	--bg-overlay: linear-gradient(180deg, #ffe5f940, #ffe5f960);
-	--text-color: #181519;
-	--accent-color: #e8a900;
-	--highlight-color: #cc7700;
+  --font:
+    "HarmonyOS Sans", Arial, Helvetica, sans-serif, "JetBrainsMono Nerd Font";
+  --font-title: "VCR OSD Mono";
+  --font-crypt: "Endfield", "VCR OSD Mono";
+  --main-color: #d65a00;
+  --secondary-color: #b25f11;
+  --warning-color: #ff3010;
+  --bg-color: #ffd8f7;
+  --bg-color-alt: #f9d1f1;
+  --bg: #ffd8f7;
+  --bg-transparent: #ffd8f770;
+  --bg-overlay: linear-gradient(180deg, #ffe5f940, #ffe5f960);
+  --text-color: #181519;
+  --accent-color: #e8a900;
+  --highlight-color: #cc7700;
 }
 
 .dark-mode {
-	--bg-color: #181519;
-	--bg-color-alt: #1d1a21;
-	--bg: #181519;
-	--bg-transparent: #18151970;
-	--bg-overlay: linear-gradient(180deg, #181519a0, #181519d0);
-	--text-color: #f5e6c8;
+  --bg-color: #181519;
+  --bg-color-alt: #1d1a21;
+  --bg: #181519;
+  --bg-transparent: #18151970;
+  --bg-overlay: linear-gradient(180deg, #181519a0, #181519d0);
+  --text-color: #f5e6c8;
 }
 
 /*-------------------COLORS-------------------*/
 body {
-	background: url("../assets/texture.svg"), var(--bg);
-	color: var(--text-color);
+  background: url("../assets/texture.svg"), var(--bg);
+  color: var(--text-color);
 }
 
 body::before {
-	background: var(--bg-overlay);
-	box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  background: var(--bg-overlay);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 h1 {
-	color: var(--highlight-color);
-	text-shadow: 0px 0px 10px var(--secondary-color);
+  color: var(--highlight-color);
+  text-shadow: 0px 0px 10px var(--secondary-color);
 }
 
 .popupContent {
-	background: var(--bg-color-alt);
-	border-color: var(--secondary-color);
+  background: var(--bg-color-alt);
+  border-color: var(--secondary-color);
 }
 
 .project {
-	background: var(--bg-color-alt);
-	border-color: var(--secondary-color);
+  background: var(--bg-color-alt);
+  border-color: var(--secondary-color);
 }
 
 .button {
-	border-color: var(--secondary-color);
-	background-color: var(--main-color);
-	color: var(--text-color);
-	text-align: center;
-	padding: 0px;
-	transition-duration: 0.5s;
+  border-color: var(--secondary-color);
+  background-color: var(--main-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 0px;
+  transition-duration: 0.5s;
 }
 
 .closeButton {
-	color: var(--warning-color);
-	transition: color 0.3s;
+  color: var(--warning-color);
+  transition: color 0.3s;
 }
 
 .closeButton:hover {
-	color: var(--main-color);
+  color: var(--main-color);
 }
 
 .button:hover {
-	background-color: var(--accent-color);
-	color: var(--text-color);
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 a {
-	color: var(--text-color);
-	transition-duration: 0.2s;
+  color: var(--text-color);
+  transition-duration: 0.2s;
 }
 
 a:hover,
 .toggle-container:hover {
-	color: var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 #navBar-open {
-	border-color: var(--highlight-color);
+  border-color: var(--highlight-color);
 }
 
 #navBar-open:hover {
-	color: var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 .blur-background {
-	border-radius: 200px;
-	box-shadow: 0px 0px 100px 100px var(--bg-transparent);
-	background-color: var(--bg-transparent);
-	backdrop-filter: blur(0.5px);
+  border-radius: 200px;
+  box-shadow: 0px 0px 100px 100px var(--bg-transparent);
+  background-color: var(--bg-transparent);
+  backdrop-filter: blur(0.5px);
 }
 
 /*--------------------------------------------*/
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	margin: 0px;
-	font-family: var(--font);
-	font-size: 11pt;
-	transition:
-		background 0.3s,
-		color 0.3s;
-	position: relative;
+  margin: 0px;
+  font-family: var(--font);
+  font-size: 11pt;
+  transition:
+    background 0.3s,
+    color 0.3s;
+  position: relative;
 }
 
 body::before {
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1;
-	transition: background 0.3s;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  transition: background 0.3s;
 }
 
 main,
 nav {
-	position: relative;
+  position: relative;
 }
 
 main {
-	overflow: hidden;
-	z-index: 1;
-	width: 85%;
+  overflow: hidden;
+  z-index: 1;
+  width: 85%;
 }
 
 section {
-	padding: 5%;
+  padding: 5%;
 }
 
 #hub {
-	height: 100vh;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	gap: 20px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 
 #title .letter {
-	display: inline-block;
-	font-family: var(--font-crypt);
-	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
+  display: inline-block;
+  font-family: var(--font-crypt);
+  animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
 }
 
 .subtitle {
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .subtitle .letter {
-	display: inline-block;
-	font-family: var(--font-crypt);
-	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
+  display: inline-block;
+  font-family: var(--font-crypt);
+  animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
 }
 
 @keyframes glitch {
-	0% {
-		font-family: var(--font-title);
-	}
+  0% {
+    font-family: var(--font-title);
+  }
 
-	50% {
-		font-family: var(--font-crypt);
-	}
+  50% {
+    font-family: var(--font-crypt);
+  }
 
-	100% {
-		font-family: var(--font-title);
-	}
+  100% {
+    font-family: var(--font-title);
+  }
 }
 
 h1 {
-	font-size: 6em;
-	margin: 0;
-	font-family: var(--font-title);
-	height: 1.5em;
+  font-size: 6em;
+  margin: 0;
+  font-family: var(--font-title);
+  height: 1.5em;
 }
 
 h2 {
-	margin-top: 0;
-	font-family: var(--font-title);
+  margin-top: 0;
+  font-family: var(--font-title);
 }
 
 h2.crypt {
-	margin: 0;
-	font-family: var(--font-crypt);
-	font-size: 3em;
+  margin: 0;
+  font-family: var(--font-crypt);
+  font-size: 3em;
 }
 
 nav {
-	height: 100%;
-	width: 15%;
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	right: 0;
-	overflow-x: visible;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-end;
-	transition: right 0.3s;
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transition: right 0.3s;
 }
 
 nav ul {
-	display: flex;
-	flex-direction: column;
-	align-items: end;
-	padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0;
 }
 
 nav ul li {
-	list-style-type: none;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 1em;
-	text-align: end;
-	width: 100%;
-	height: 1.5em;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1em;
+  text-align: end;
+  width: 100%;
+  height: 1.5em;
 }
 
 nav a {
-	font-size: 1.5em;
-	padding: 1em;
-	color: inherit;
-	text-decoration: none;
-	transition-duration: 0.5s;
-	position: relative;
-	font-family: var(--font-title);
+  font-size: 1.5em;
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  position: relative;
+  font-family: var(--font-title);
 }
 
 nav a .letter {
-	display: inline-block;
+  display: inline-block;
 }
 
 nav a:hover .letter {
-	animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
+  animation: glitch var(--dur) steps(1) var(--del) var(--it) forwards;
 }
 
 nav a:hover,
 nav a.active {
-	padding-right: 4em;
+  padding-right: 4em;
 }
 
 nav a::after {
-	margin-left: 5px;
-	position: absolute;
-	height: 4px;
-	width: 5em;
-	content: "";
-	top: 50%;
-	background-color: var(--text-color);
-	transition-duration: 0.5s;
+  margin-left: 5px;
+  position: absolute;
+  height: 4px;
+  width: 5em;
+  content: "";
+  top: 50%;
+  background-color: var(--text-color);
+  transition-duration: 0.5s;
 }
 
 #projects {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .detailsProjet {
-	position: fixed;
-	z-index: 4;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: none;
-	align-items: center;
-	justify-content: center;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .popupContent {
-	position: relative;
-	border-style: solid;
-	border-width: 1.5px;
-	padding: 20px;
-	width: 85%;
-	height: 80%;
+  position: relative;
+  border-style: solid;
+  border-width: 1.5px;
+  padding: 20px;
+  width: 85%;
+  height: 80%;
 }
 
 .detailsProjet .project-content {
-	padding: 0;
-	overflow: scroll;
-	height: 85%;
-	width: 80%;
-	margin: auto;
-	font-size: 1.5em;
+  padding: 0;
+  overflow: scroll;
+  height: 85%;
+  width: 80%;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .detailsProjet .project-head {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0;
-	margin-bottom: 20px;
-	height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px;
+  height: 10%;
 }
 
 .detailsProjet .project-head .language-logos {
-	display: flex;
-	gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .detailsProjet .project-head .language-logos img {
-	height: 4em;
+  height: 4em;
 }
 
 .detailsProjet .project-head h2 {
-	margin-top: 1em;
-	font-size: 3em;
+  margin-top: 1em;
+  font-size: 3em;
 }
 
 .detailsProjet hr {
-	width: 100%;
+  width: 100%;
 }
 
 .show {
-	display: flex;
+  display: flex;
 }
 
 .project {
-	width: 40%;
-	border-width: 1.5px;
-	border-style: solid;
-	padding: 0;
-	margin: 2%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transition-duration: 0.5s;
-	position: relative;
+  width: 40%;
+  border-width: 1.5px;
+  border-style: solid;
+  padding: 0;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 0.5s;
+  position: relative;
 }
 
 .project:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project img {
-	width: 100%;
+  width: 100%;
 }
 
 .project h3 {
-	text-align: center;
+  text-align: center;
 }
 
 .project p {
-	margin: 10px;
-	text-align: justify;
-	font-size: 1.2em;
+  margin: 10px;
+  text-align: justify;
+  font-size: 1.2em;
 }
 
 .handle {
-	position: absolute;
-	background-color: var(--secondary-color);
-	height: 6px;
-	width: 6px;
+  position: absolute;
+  background-color: var(--secondary-color);
+  height: 6px;
+  width: 6px;
 }
 
 .tr {
-	top: -4px;
-	right: -4px;
+  top: -4px;
+  right: -4px;
 }
 
 .tl {
-	top: -4px;
-	left: -4px;
+  top: -4px;
+  left: -4px;
 }
 
 .br {
-	bottom: -4px;
-	right: -4px;
+  bottom: -4px;
+  right: -4px;
 }
 
 .bl {
-	bottom: -4px;
-	left: -4px;
+  bottom: -4px;
+  left: -4px;
 }
 
 .button {
-	position: relative;
-	text-decoration: none;
-	cursor: pointer;
-	padding: 1em 3em;
-	margin: 0.5em;
-	border-style: solid;
-	border-width: 1px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1em 3em;
+  margin: 0.5em;
+  border-style: solid;
+  border-width: 1px;
 }
 
 hr {
-	width: 60%;
-	border: 2px solid;
-	color: inherit;
-	border-radius: 5px;
+  width: 60%;
+  border: 2px solid;
+  color: inherit;
+  border-radius: 5px;
 }
 
 .btn-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #CV {
-	height: 100vh;
+  height: 100vh;
 }
 
 #stack,
 #about,
 #links {
-	width: 50%;
-	margin: auto;
-	font-size: 1.5em;
+  width: 50%;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 #stack li {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 #stack .technos {
-	margin-top: 0.5em;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: start;
-	gap: 0.5em;
+  margin-top: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 0.5em;
 
-	.image {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 3em;
-	}
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3em;
+  }
 
-	.image p {
-		display: none;
-		text-align: center;
-		margin: 0;
-		height: 0;
-		transition: height 0.3s;
-	}
+  .image p {
+    display: none;
+    text-align: center;
+    margin: 0;
+    height: 0;
+    transition: height 0.3s;
+  }
 
-	.image:hover p {
-		display: block;
-		height: 1em;
-	}
+  .image:hover p {
+    display: block;
+    height: 1em;
+  }
 
-	img {
-		height: 3em;
-		transition: height 0.3s;
-	}
+  img {
+    height: 3em;
+    transition: height 0.3s;
+  }
 
-	.image:hover img {
-		height: 2em;
-	}
+  .image:hover img {
+    height: 2em;
+  }
 }
 
 /* Styles for the toggle container */
 .toggle-container {
-	margin-top: 1em;
-	cursor: pointer;
-	transition: color 0.3s;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 /* Styles for the sun and moon icons */
 .sun-icon,
 .moon-icon {
-	width: 24px;
-	height: 24px;
-	transition: opacity 0.3s;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
 }
 
 /* Hide moon icon by default (light mode) */
 .moon-icon {
-	display: none;
+  display: none;
 }
 
 /* Show moon icon and hide sun icon in dark mode */
 .dark-mode .sun-icon {
-	display: none;
+  display: none;
 }
 
 .dark-mode .moon-icon {
-	display: inline-block;
+  display: inline-block;
 }
 
 #navBar-Buttons {
-	position: absolute;
-	top: 40px;
-	right: 40px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 #navBar-open {
-	position: absolute;
-	top: 2em;
-	right: 100%;
-	padding: 1em;
-	color: var(--text-color);
-	transition: color 0.3s;
-	display: none;
-	border-style: solid;
-	border-width: 3px;
-	border-right-width: 0;
-	border-top-left-radius: 1em;
-	border-bottom-left-radius: 1em;
+  position: absolute;
+  top: 2em;
+  right: 100%;
+  padding: 1em;
+  color: var(--text-color);
+  transition: color 0.3s;
+  display: none;
+  border-style: solid;
+  border-width: 3px;
+  border-right-width: 0;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
 }
 
 nav #navBar-close {
-	display: none;
+  display: none;
 }
 
 nav.hide {
-	right: -15%;
+  right: -15%;
 
-	#navBar-open {
-		display: block;
-	}
+  #navBar-open {
+    display: block;
+  }
 }
 
 iframe {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 720px) {
-	main {
-		width: 100%;
-	}
+  main {
+    width: 100%;
+  }
 
-	nav {
-		width: 100%;
-		background-color: var(--bg-color);
-	}
+  nav {
+    width: 100%;
+    background-color: var(--bg-color);
+  }
 
-	h1 {
-		height: 3em;
-		width: 75%;
-	}
+  h1 {
+    height: 3em;
+    width: 75%;
+  }
 
-	nav.hide {
-		right: -100%;
-	}
+  nav.hide {
+    right: -100%;
+  }
 
-	nav #navBar-close {
-		display: block;
-	}
+  nav #navBar-close {
+    display: block;
+  }
 
-	.popupContent {
-		width: 100%;
-		height: 100%;
-	}
+  .popupContent {
+    width: 100%;
+    height: 100%;
+  }
 
-	.project {
-		width: 90%;
-	}
+  .project {
+    width: 90%;
+  }
 
-	.detailsProjet .project-head {
-		flex-wrap: wrap;
-		height: 20%;
-	}
+  .detailsProjet .project-head {
+    flex-wrap: wrap;
+    height: 20%;
+  }
 
-	.detailsProjet .project-head h2 {
-		order: 3;
-		width: 100%;
-	}
+  .detailsProjet .project-head h2 {
+    order: 3;
+    width: 100%;
+  }
 
-	.detailsProjet .project-content {
-		width: 100%;
-	}
+  .detailsProjet .project-content {
+    width: 100%;
+  }
 
-	#stack,
-	#about,
-	#links {
-		width: 80%;
-	}
+  #stack,
+  #about,
+  #links {
+    width: 80%;
+  }
 }
