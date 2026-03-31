@@ -1,307 +1,322 @@
 [
-	{
-		"id": "s2v8",
-		"name": "Shelf 2, Volume 8",
-		"source": [
-			{
-				"name": "Design Document",
-				"link": "https://docs.google.com/document/d/1ifxRX9fC213M-o9QqKDZpydLWSAv1_2vdhHodwGLI3I/edit?usp=sharing"
-			}
-		],
-		"preview": [
-			"Shelf 2, Volume 8 est un projet de jeu de type hack&slash en 2D basé sur des mécaniques de coordination.",
-			"Le joueur peut contrôler plusieurs personnages simultanément pour effectuer des combinaisons."
-		],
-		"desc": [
-			"C'est avec ce projet que je suis rentré pour la première fois dans le monde du jeu vidéo.",
-			"<i>Shelf 2, Volume 8</i> est un jeu en 2D, avec des mécaniques de combat complexes, j'ai donc dû passer par une phase de game design pour définir précisément ces mécaniques de jeu.",
-			"<br> Ce projet m'a introduit au monde du jeu vidéo, et m'a permis d'apprendre les méthodes de conception de jeux.",
-			"C'est après avoir découvert ces méthodes de travail que j'ai décidé de réaliser un projet de taille plus réduite avant celui-ci.",
-			"<br/>J'ai donc fait une pause dans la conception de ce jeu pour plutôt concevoir <i>Wall 2</i>.",
-			"<br> <i>Shelf 2, Volume 8</i> a été le projet qui a confirmé que le domaine du game dev et du game design est définitivement le domaine de l'informatique qui m'intéresse le plus."
-		],
-		"techs": [
-			"godot"
-		]
-	},
-	{
-		"id": "w2",
-		"name": "Wall 2",
-		"source": [
-			{
-				"name": "Design Document",
-				"link": "https://docs.google.com/document/d/1N-jqkKdLSF-LnV_zXfiXsnERvm2czc-wGfuHvRmiRkc/edit?usp=sharing"
-			},
-			{
-				"name": "Code source",
-				"link": "https://github.com/Exaether/Wall-2"
-			}
-		],
-		"preview": [
-			"Wall 2 est un projet de jeu destiné à être une introduction à l'histoire et aux mécaniques de Shelf 2, Volume 8.",
-			"Ce jeu est pour moi aussi une introduction au game developement et à l'utilisation du moteur Godot"
-		],
-		"desc": [
-			"<i>Wall 2</i> est un jeu de style hack & slash et side scroller. Plus précisément, le joueur contrôle un personnage en 2 dimensions, et combat des vagues d'ennemis jusqu'a la fin du niveau. La mécanique principale qui différencie ce jeu des autres est le fait que le joueur peut controler 2 personnages et efectuer des combinaisons permettant d'être plus efficace.<br/>",
-			"J'ai entrepris de réaliser ce projet durant la conception de <i>Shelf 2, Volume 8</i>, car ce dernier est un projet ambitieux, qui nécessite d'avoir déjà une certaine expérience dans le domaine du développement de jeux.",
-			"J'ai donc décidé de réaliser <i>Wall 2</i>, un jeu de taille réduite, qui me sert d'entraînement, et qui me permet d'apprendre l'utilisation du moteur de jeu Godot.",
-			"De plus, ce jeu est une occasion de créer une introduction à l'histoire de <i>Shelf 2, Volume 8</i>.",
-			"<br> Ce projet me permet donc de me familiariser avec Godot, mais aussi avec la rédaction d'un GDD (Game Design Document), un document résumant la conception et les choix techniques et artistiques du jeu.<br/>",
-			"<i>Wall 2</i> est actuellement en phase de prototypage et de conception technique. Un prototype en game developement est une version minimale, avec un très fort accent sur le game design. Le but principal du prototype est de vérifier que l'idée de base du jeu ainsi que ses mécaniques sont viables et intéréssantes.",
-			"De plus, ce prototype me permet de chercher des stratégies techiques pour implémenter certaines mécaniques (dans mon cas le système de personnage multiples). Je doit donc implémenter des design patterns, nottament <a href=`https://gameprogrammingpatterns.com/command.html`>la commande</a> ou la <a href=`https://gameprogrammingpatterns.com/state.html`>state machine</a>."
-		],
-		"techs": [
-			"godot"
-		]
-	},
-	{
-		"id": "rkmEditor",
-		"name": "RKM Editor",
-		"source": [],
-		"preview": [
-			"Le RKM Editor est un logiciel développé au sein du laboratoire G-SCOP.",
-			"Il permet de modéliser les connaissances sous forme d'un graphe appelé un RKM."
-		],
-		"desc": [
-			"Durant mon stage de 2ème année, ainsi que mon alternance de 3ème année de BUT informatique, j'ai rejoint le laboratoire G-SCOP.",
-			"Ce laboratoire développe de nouvelles méthodes de production en respectant une vision environnementale et de sobriété énergétique.",
-			"<br> Durant cette période, j'ai travaillé sur le RKM Editor, un logiciel permettant de modéliser la connaissance sous forme d'un graphe appelé un RKM.",
-			"Le logiciel est destiné aux chercheurs du laboratoire, pour modéliser les processus de fabrication, mais aussi a d'autres entreprises, qui peuvent l'utiliser comme un outil d'aide à la décision.",
-			"<br> J'ai travaillé seul sur le projet, des réunions fréquentes étaient faites pour discuter de l'avancement du développement, et pour proposer différentes améliorations possibles.",
-			"Le RKM Editor est développé en C++ avec la bibliothèque graphique Qt.",
-			"<br> J'ai pu découvrir au début de mon stage que le code de l'application d'origine était très désorganisé et ne suivait pas d'architecture claire.",
-			"Il a donc été nécessaire de refactoriser le logiciel entièrement pour rendre le code maintenable, ce qui m'a permis ensuite d'ajouter des fonctionnalités qui n'auraient pas été possibles précédemment. Cette refactorisation m'a occupé pour la grande partie de mon stage.",
-			"<br> Ce stage m'a permis de grandement renforcer mes compétences en C++, mais aussi en architecture logicielle et en refactorisation d'un code legacy.",
-			"La qualité de code est une compétence qui a été largement mise en jeu durant la réalisation de ce projet, pour garder un code maintenable.",
-			"<br> Durant mon alternance, j'ai continué à travailler sur le RKM Editor, mais cette fois principalement sur l'ajout de nouvelles fonctionnalités, puisque l'architecture de l'application est maintenant suffisante pour être étendue.",
-			"J'ai donc pu développer un nombre de nouvelles fonctionnalités, telles que une manière d'intégrer la littérature dans ce modèle de connaissance, ou différentes fonctionnalités de qualité de vie pour rendre le logiciel plus facile à utiliser."
-		],
-		"techs": [
-			"cpp",
-			"qt"
-		]
-	},
-	{
-		"id": "zoot",
-		"name": "ZOOT",
-		"source": [
-			{
-				"name": "Site",
-				"link": "https://exaether.org"
-			},
-			{
-				"name": "Code source",
-				"link": "https://github.com/Exaether/ZOOT"
-			}
-		],
-		"preview": [
-			"ZOOT est un site web qui répertorie tous les personnages du jeu Arknights",
-			"Il permet de recher n'importe quel personnage de de visualiser ses attributs et compétences"
-		],
-		"desc": [
-			"Arknights est un jeu vidéo qui compte plusieurs centaines de personnages jouables, la communauté du jeu cherche donc sans cesse à connaitres leurs statistiques précises pour pouvoir les comparer.",
-			"Le jeu comptant aussi un grand nombre de paramètres à prndre en compte lorsqu'on mesure l'efficacité d'un personnage, il est extrèmement difficile de trouver une réponse claire sur ce sujet.",
-			"<br> C'est pour cela que j'ai entrepris de créer ZOOT, un site web qui répertorie tous les personnages jouables de Arknights, leur attributs, compétences et toutes les autres informations utiles à leur perfomance en jeu.",
-			"<br>D'un point de vue technique, j'ai réalisé ce site en JavaScript en utilisant le framework svelte, qui permet de gérer un affichage réactif extrèmement facilement.",
-			"De plus, j'utilise mon autre projet <i>Slumber Bridge</i> comme backend et source de données. Cela me permet de ne pas devoir gérer les fichiers json incompréhensibles que les autres sites similaires utilisent.",
-			"ZOOT est un projet que j'apprécie beaucoup malgré ma faible attirance par le développement web car c'est un projet qui a pour but d'être un outil pour une communauté, plutot qu'un site web commercial.",
-			"Ce projet m'a aussi permis de renforcer mes compétences en JavaScript et d'apprendre l'utilisation du framework svelte."
-		],
-		"techs": [
-			"svelte",
-			"js",
-			"css"
-		]
-	},
-	{
-		"id": "slumber-bridge",
-		"name": "Slumber Bridge",
-		"source": [
-			{
-				"name": "Lien",
-				"link": "https://exaether.org/api"
-			},
-			{
-				"name": "Code source",
-				"link": "https://github.com/Exaether/slumber-bridge"
-			}
-		],
-		"preview": [
-			"Slumber bridge est une API REST qui présente tous les personnages du jeu Arknights ainsi que leur données internes au jeu."
-		],
-		"desc": [
-			"Un certain nombre de personnes ont réalisé des sites web présentant les personnages ou autres données tirées du jeu vidéo Arknights. Ces donnés sont extraites du jeu directement et sockées sous forme de fichiers json.",
-			"Quiconque a déja cherché les données de jeu de Arknights peut savoir a quel point ces fichiers sont difficiles à lire.",
-			"De plus, ces fichiers totalisant une taille de plus de 200MO, tous les sites les utilisant sont souvent très groumands en bande passante.",
-			"<br>C'est pour cela que j'ai entrepris de créer une alternative en simplifiant ces gros fichiers sous forme d'une API REST.",
-			"Cette API web divise ces fichiers de plusieurs MO en plusieurs endpoints et ne retourne que les données utiles en filtrant les données redondantes, ainsi que cells non utiles en dehors du jeu (telles que les identifiants de prefabs)",
-			"<br>J'ai réalisé Slumber bridge en python grâce au framework FastAPI qui m'a permis de définir des endpoints extrèmement facilement. De plus, ce framework me permet de réaliser un server API en python, un language que j'apprécie bien plus que le classique JavaScript souvent utilisé pour le web.",
-			"La partie la plus difficile de ce projet à été de loin de comprendre l'organisation des données de base et de les réorganiser pour les rendre plus compréensibles et lisibles.",
-			"C'est grâce a ce projet que j'ai pu réaliser bien plus simplement un site web présentant ces données graphiquement: ZOOT."
-		],
-		"techs": [
-			"fastapi",
-			"Python"
-		]
-	},
-	{
-		"id": "ludimap",
-		"name": "Ludi-Map",
-		"source": [
-			{
-				"name": "Code Source",
-				"link": "https://github.com/Exaether/Ludi-map"
-			}
-		],
-		"preview": [
-			"Ludi-Map est un jeu interactif en ligne avec des cartes anciennes pour mettre en valeur la géographie et les monuments de notre région.",
-			"Ce site a été développé dans le cadre de la SAE du semestre 3 du BUT informatique."
-		],
-		"desc": [
-			"Dans le cadre de la SAE du semestre 3 du BUT informatique, nous devions développer un site web mettant en valeur le patrimoine français.",
-			"C'est dans ce contexte que mon équipe a développé Ludi-Map, un jeu interactif présentant des cartes de l'état-major des années 1820-1866.",
-			"Les règles du jeu sont les suivantes :",
-			"Un monument historique est choisi au hasard, et il est affiché sur une photo aérienne.",
-			"Le joueur doit alors retrouver ce même monument, mais cette fois sur une carte des années 1820.",
-			"L'objectif de ce jeu est de présenter au joueur les différents monuments de notre région, ainsi que les paysages et la géographie environnante.",
-			"<br> Ludi-Map a été développé principalement en PHP et en JavaScript, ainsi que du HTML/CSS pour les interfaces. L'hébergement du serveur a été fait grâce à des machines virtuelles mises à disposition par l'IUT.",
-			"Pour le développement de ce site, j'ai fait partie d'une équipe de 6 personnes. Mon rôle dans cette équipe était principalement axé sur la partie back-end du site.",
-			"J'ai aussi joué le rôle de support aux différents membres du groupe, j'ai donc passé du temps à aider chacun d'entre eux à régler différents problèmes.",
-			"Ce projet m'a permis d'approfondir mes compétences dans les technologies web telles que PHP et JavaScript. J'ai aussi pu améliorer mes compétences de gestion de projet et de travail en groupe, puisque'une grande partie de cette SAE y était consacrée."
-		],
-		"techs": [
-			"php",
-			"js",
-			"html",
-			"css"
-		]
-	},
-	{
-		"id": "cellular",
-		"name": "Cellular automaton engine",
-		"source": [
-			{
-				"name": "Code Source",
-				"link": "https://github.com/Exaether/Cellular-automaton"
-			}
-		],
-		"preview": [
-			"Un simulateur d'automate cellulaire écrit en python.",
-			"Le programme permet de simuler les règles d'un automate cellulaire, notamment le jeu de la vie."
-		],
-		"desc": [
-			"Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.",
-			"Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité.",
-			"<br> Un automate cellulaire est un ensemble de cellules qui évoluent génération après génération sur une grille selon certaines règles.",
-			"Il faut donc recalculer l'état de chaque cellule à chaque génération.",
-			"Le programme permet entre autres de :",
-			"<ul> <li> Choisir un set de règles </li> <li> Créer un set de règles </li> <li> Modifier manuellement l'état de chaque cellule </li> </ul>",
-			"Ce projet était initialement prévu pour servir d'apprentissage de la bibliothèque Pygame, mais le résultat final étant satisfaisant, il est resté comme un de mes projets principaux.",
-			"N'ayant travaillé que seul sur ce projet, je n'ai mis en place aucune méthode d'organisation, bien que j'ai utilisé Git afin de sauvegarder mon travail.",
-			"J'ai tout de même été contraint par un temps limité pour la réalisation de ce projet.",
-			"<br> Lors de ce projet, j'ai principalement acquis des compétences techniques, comme une meilleure maîtrise du langage Python, et un apprentissage de la bibliothèque Pygame.",
-			"C'est aussi un des premiers programmes de taille conséquente que j'ai conçu, j'ai donc dû adopter des bonnes pratiques de programmation, telles que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
-			"<br> Enfin, j'ai apprécié ce projet principalement pour le fait de coder sans connaissance avancée de la bibliothèque, ce qui m'a obligé à me documenter pour réaliser ce programme."
-		],
-		"techs": [
-			"Python",
-			"Pygame"
-		]
-	},
-	{
-		"id": "dotfiles",
-		"name": "Dotfiles",
-		"source": [
-			{
-				"name": "Code Source",
-				"link": "https://github.com/Exaether/dotfiles"
-			}
-		],
-		"preview": [
-			"J'ai installé et configuré Arch Linux sur mon ordinateur personnel.",
-			"J'ai donc commencé ce projet avec un écran noir et une ligne de commande. J'ai maintenant un environnement de bureau entièrement fonctionnel, optimisé et personnalisé."
-		],
-		"desc": [
-			"<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
-			"Arch Linux est une distribution Linux minimale qui a pour principe de n'inclure que le strict nécessaire au fonctionnement de l'ordinateur.",
-			"Je suis donc libre d'inclure tous les logiciels dont j'ai besoin, tout en gardant un grand contrôle sur mon système.",
-			"<br> Le terme \"dotfiles\" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.",
-			"Le processus de configuration de Arch passe par la modification d'un grand nombre de ces fichiers pour que chaque application obtienne le comportement désiré.",
-			"J'ai principalement dû configurer les logiciels suivants :",
-			"<ul> <li> i3 : pour l'environnement graphique </li> <li> polybar : pour obtenir une barre des tâches </li> <li> rofi : pour obtenir un menu de lancement d'applications </li> <li> zsh : pour une invite de commande personnalisée </li> <li> neoVim : un éditeur de texte avancé pour du code </li> </ul>",
-			"<br> J'utilise Git pour stocker ces fichiers de configuration sur le cloud. De cette manière, je peux si besoin reproduire mon installation de Arch Linux rapidement sur un autre ordinateur.",
-			"Ce projet m'a permis de compléter ma connaissance du fonctionnement de Linux, mais aussi du fonctionnement d'un ordinateur et d'un système d'exploitation en général.",
-			"J'ai aussi découvert l'écosystème et la philosophie de Linux durant mes recherches pour des logiciels open-source.",
-			"<br> Ce projet a été un de mes projets les plus importants puisqu'il m'a permis d'obtenir l'environnement de travail que j'utilise quotidiennement, ce qui me permet d'être bien plus efficace que dans un environnement pré-configuré comme windows ou KDE Plasma."
-		],
-		"techs": [
-			"Linux",
-			"Arch",
-			"I3",
-			"Polybar"
-		]
-	},
-	{
-		"id": "portfolio",
-		"name": "Portfolio",
-		"source": [
-			{
-				"name": "Code Source",
-				"link": "https://github.com/Exaether/portfolio"
-			}
-		],
-		"preview": [
-			"Le site web sur lequel vous vous trouvez.",
-			"Il présente ma personne, ainsi que tous les projets principaux que j'ai pu réaliser, mais aussi ceux en cours de réalisation."
-		],
-		"desc": [
-			"Ceci est mon portfolio.<br>",
-			"C'est le premier site web que j'ai pu réaliser, c'est donc avec lui que j'ai appris les différentes technologies web.",
-			"Ce site a donc grandement évolué avec mon apprentissage des langages comme le JavaScript.",
-			"Mon portfolio n'utilise pas de PHP, il est écrit entièrement en HTML et CSS, plus un script JavaScript qui permet de créer dynamiquement les cartes présentant mes projets, comme celle sur laquelle vous avez cliqué.",
-			"Cela permet aussi de pouvoir publier ce site sur un serveur n'ayant pas accès à un interpréteur PHP, comme GitHub Pages.",
-			"Le design du site est destiné à rester le plus sobre possible, pour que l'information présentée soit le centre d'intérêt principal du visiteur.",
-			"<br> Bien qu'ayant été initié par ma formation, je continue de développer ce site web en tant que projet personnel.",
-			"La réalisation de mon portfolio m'a principalement appris les fondamentaux des technologies web, principalement le HTML, CSS et JS.",
-			"<br> Ce site porte une place spéciale parmi les différents projets web que j'ai pu réaliser, car il correspond à ma vision du web, étant une page simple ayant pour unique but de présenter une information."
-		],
-		"techs": [
-			"html",
-			"css",
-			"js"
-		]
-	},
-	{
-		"id": "maze",
-		"name": "Maze generator",
-		"source": [
-			{
-				"name": "Code Source",
-				"link": "https://github.com/Exaether/maze"
-			}
-		],
-		"preview": [
-			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
-			"Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files."
-		],
-		"desc": [
-			"Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
-			"Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce, par un seul et unique chemin.",
-			"<br> Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.",
-			"Le projet étant proposé dans le cadre du cours portant sur les structures d'arbre, nous avons dû modéliser le labyrinthe à partir d'un arbre.",
-			"Nous avons ensuite utilisé des piles et des files pour construire récursivement le labyrinthe de manière à ce qu'il soit parfait.",
-			"<br> Après le rendu de ce projet en cours de NSI, j'ai décidé de le continuer en implémentant un affichage graphique utilisant Pygame, ainsi qu'un joueur déplaçable dans le labyrinthe.",
-			"<br> J'ai donc travaillé dans un groupe de trois personnes durant la moitié de ce projet, de plus, la date de rendu était imposée.",
-			"Nous avons donc mis en place une division des tâches, en se répartissant chacun un fichier du projet à coder.",
-			"Nous n'avons toutefois pas utilisé Git pour cette partie du projet.",
-			"<br> Dans la suite du projet, que j'ai réalisé seul, j'ai cette fois utilisé Git, mais pas d'autres méthodes d'organisation.",
-			"Lors de ce projet, mon rôle a été d'écrire l'algorithme de génération du labyrinthe en lui-même. J'ai donc pu mettre en application les cours de NSI traitant des arbres, piles et files.",
-			"J'ai pu aussi renforcer ma maîtrise du langage python ainsi que mes pratiques de programmation.",
-			"<br> Lorsque j'ai repris le projet personnellement, j'ai dû utiliser Pygame, et j'ai donc renforcé ma connaissance de cette bibliothèque."
-		],
-		"techs": [
-			"Python",
-			"Pygame"
-		]
-	}
+  {
+    "id": "s2v8",
+    "name": "Shelf 2, Volume 8",
+    "source": [
+      {
+        "name": "Design Document",
+        "link": "https://docs.google.com/document/d/1ifxRX9fC213M-o9QqKDZpydLWSAv1_2vdhHodwGLI3I/edit?usp=sharing"
+      }
+    ],
+    "preview": [
+      "Shelf 2, Volume 8 est un projet de jeu de type hack&slash en 2D basé sur des mécaniques de coordination.",
+      "Le joueur peut contrôler plusieurs personnages simultanément pour effectuer des combinaisons."
+    ],
+    "desc": [
+      "C'est avec ce projet que je suis rentré pour la première fois dans le monde du jeu vidéo.",
+      "<i>Shelf 2, Volume 8</i> est un jeu en 2D, avec des mécaniques de combat complexes, j'ai donc dû passer par une phase de game design pour définir précisément ces mécaniques de jeu.",
+      "<br> Ce projet m'a introduit au monde du jeu vidéo, et m'a permis d'apprendre les méthodes de conception de jeux.",
+      "C'est après avoir découvert ces méthodes de travail que j'ai décidé de réaliser un projet de taille plus réduite avant celui-ci.",
+      "<br/>J'ai donc fait une pause dans la conception de ce jeu pour plutôt concevoir <i>Wall 2</i>.",
+      "<br> <i>Shelf 2, Volume 8</i> a été le projet qui a confirmé que le domaine du game dev et du game design est définitivement le domaine de l'informatique qui m'intéresse le plus."
+    ],
+    "techs": ["godot"]
+  },
+  {
+    "id": "w2",
+    "name": "Wall 2",
+    "source": [
+      {
+        "name": "Design Document",
+        "link": "https://docs.google.com/document/d/1N-jqkKdLSF-LnV_zXfiXsnERvm2czc-wGfuHvRmiRkc/edit?usp=sharing"
+      },
+      {
+        "name": "Code source",
+        "link": "https://github.com/Exaether/Wall-2"
+      }
+    ],
+    "preview": [
+      "Wall 2 est un projet de jeu destiné à être une introduction à l'histoire et aux mécaniques de Shelf 2, Volume 8.",
+      "Ce jeu est pour moi aussi une introduction au game developement et à l'utilisation du moteur Godot"
+    ],
+    "desc": [
+      "<i>Wall 2</i> est un jeu de style hack & slash et side scroller. Plus précisément, le joueur contrôle un personnage en 2 dimensions, et combat des vagues d'ennemis jusqu'a la fin du niveau. La mécanique principale qui différencie ce jeu des autres est le fait que le joueur peut controler 2 personnages et efectuer des combinaisons permettant d'être plus efficace.<br/>",
+      "J'ai entrepris de réaliser ce projet durant la conception de <i>Shelf 2, Volume 8</i>, car ce dernier est un projet ambitieux, qui nécessite d'avoir déjà une certaine expérience dans le domaine du développement de jeux.",
+      "J'ai donc décidé de réaliser <i>Wall 2</i>, un jeu de taille réduite, qui me sert d'entraînement, et qui me permet d'apprendre l'utilisation du moteur de jeu Godot.",
+      "De plus, ce jeu est une occasion de créer une introduction à l'histoire de <i>Shelf 2, Volume 8</i>.",
+      "<br> Ce projet me permet donc de me familiariser avec Godot, mais aussi avec la rédaction d'un GDD (Game Design Document), un document résumant la conception et les choix techniques et artistiques du jeu.<br/>",
+      "<i>Wall 2</i> est actuellement en phase de prototypage et de conception technique. Un prototype en game developement est une version minimale, avec un très fort accent sur le game design. Le but principal du prototype est de vérifier que l'idée de base du jeu ainsi que ses mécaniques sont viables et intéréssantes.",
+      "De plus, ce prototype me permet de chercher des stratégies techiques pour implémenter certaines mécaniques (dans mon cas le système de personnage multiples). Je doit donc implémenter des design patterns, nottament <a href=`https://gameprogrammingpatterns.com/command.html`>la commande</a> ou la <a href=`https://gameprogrammingpatterns.com/state.html`>state machine</a>."
+    ],
+    "techs": ["godot"]
+  },
+  {
+    "id": "rkmEditor",
+    "name": "RKM Editor",
+    "source": [],
+    "preview": [
+      "Le RKM Editor est un logiciel développé au sein du laboratoire G-SCOP.",
+      "Il permet de modéliser les connaissances sous forme d'un graphe appelé un RKM."
+    ],
+    "desc": [
+      "Durant mon stage de 2ème année, ainsi que mon alternance de 3ème année de BUT informatique, j'ai rejoint le laboratoire G-SCOP.",
+      "Ce laboratoire développe de nouvelles méthodes de production en respectant une vision environnementale et de sobriété énergétique.",
+      "<br> Durant cette période, j'ai travaillé sur le RKM Editor, un logiciel permettant de modéliser la connaissance sous forme d'un graphe appelé un RKM.",
+      "Le logiciel est destiné aux chercheurs du laboratoire, pour modéliser les processus de fabrication, mais aussi a d'autres entreprises, qui peuvent l'utiliser comme un outil d'aide à la décision.",
+      "<br> J'ai travaillé seul sur le projet, des réunions fréquentes étaient faites pour discuter de l'avancement du développement, et pour proposer différentes améliorations possibles.",
+      "Le RKM Editor est développé en C++ avec la bibliothèque graphique Qt.",
+      "<br> J'ai pu découvrir au début de mon stage que le code de l'application d'origine était très désorganisé et ne suivait pas d'architecture claire.",
+      "Il a donc été nécessaire de refactoriser le logiciel entièrement pour rendre le code maintenable, ce qui m'a permis ensuite d'ajouter des fonctionnalités qui n'auraient pas été possibles précédemment. Cette refactorisation m'a occupé pour la grande partie de mon stage.",
+      "<br> Ce stage m'a permis de grandement renforcer mes compétences en C++, mais aussi en architecture logicielle et en refactorisation d'un code legacy.",
+      "La qualité de code est une compétence qui a été largement mise en jeu durant la réalisation de ce projet, pour garder un code maintenable.",
+      "<br> Durant mon alternance, j'ai continué à travailler sur le RKM Editor, mais cette fois principalement sur l'ajout de nouvelles fonctionnalités, puisque l'architecture de l'application est maintenant suffisante pour être étendue.",
+      "J'ai donc pu développer un nombre de nouvelles fonctionnalités, telles que une manière d'intégrer la littérature dans ce modèle de connaissance, ou différentes fonctionnalités de qualité de vie pour rendre le logiciel plus facile à utiliser."
+    ],
+    "techs": ["cpp", "qt"]
+  },
+  {
+    "id": "zoot",
+    "name": "ZOOT",
+    "source": [
+      {
+        "name": "Site",
+        "link": "https://exaether.org"
+      },
+      {
+        "name": "Code source",
+        "link": "https://github.com/Exaether/ZOOT"
+      }
+    ],
+    "preview": [
+      "ZOOT est un site web qui répertorie tous les personnages du jeu Arknights",
+      "Il permet de recher n'importe quel personnage de de visualiser ses attributs et compétences"
+    ],
+    "desc": [
+      "Arknights est un jeu vidéo qui compte plusieurs centaines de personnages jouables, la communauté du jeu cherche donc sans cesse à connaitres leurs statistiques précises pour pouvoir les comparer.",
+      "Le jeu comptant aussi un grand nombre de paramètres à prndre en compte lorsqu'on mesure l'efficacité d'un personnage, il est extrèmement difficile de trouver une réponse claire sur ce sujet.",
+      "<br> C'est pour cela que j'ai entrepris de créer ZOOT, un site web qui répertorie tous les personnages jouables de Arknights, leur attributs, compétences et toutes les autres informations utiles à leur perfomance en jeu.",
+      "<br>D'un point de vue technique, j'ai réalisé ce site en JavaScript en utilisant le framework svelte, qui permet de gérer un affichage réactif extrèmement facilement.",
+      "De plus, j'utilise mon autre projet <i>Slumber Bridge</i> comme backend et source de données. Cela me permet de ne pas devoir gérer les fichiers json incompréhensibles que les autres sites similaires utilisent.",
+      "ZOOT est un projet que j'apprécie beaucoup malgré ma faible attirance par le développement web car c'est un projet qui a pour but d'être un outil pour une communauté, plutot qu'un site web commercial.",
+      "Ce projet m'a aussi permis de renforcer mes compétences en JavaScript et d'apprendre l'utilisation du framework svelte."
+    ],
+    "techs": ["svelte", "js", "css"]
+  },
+  {
+    "id": "slumber-bridge",
+    "name": "Slumber Bridge",
+    "source": [
+      {
+        "name": "Lien",
+        "link": "https://exaether.org/api"
+      },
+      {
+        "name": "Code source",
+        "link": "https://github.com/Exaether/slumber-bridge"
+      }
+    ],
+    "preview": [
+      "Slumber bridge est une API REST qui présente tous les personnages du jeu Arknights ainsi que leur données internes au jeu."
+    ],
+    "desc": [
+      "Un certain nombre de personnes ont réalisé des sites web présentant les personnages ou autres données tirées du jeu vidéo Arknights. Ces donnés sont extraites du jeu directement et sockées sous forme de fichiers json.",
+      "Quiconque a déja cherché les données de jeu de Arknights peut savoir a quel point ces fichiers sont difficiles à lire.",
+      "De plus, ces fichiers totalisant une taille de plus de 200MO, tous les sites les utilisant sont souvent très groumands en bande passante.",
+      "<br>C'est pour cela que j'ai entrepris de créer une alternative en simplifiant ces gros fichiers sous forme d'une API REST.",
+      "Cette API web divise ces fichiers de plusieurs MO en plusieurs endpoints et ne retourne que les données utiles en filtrant les données redondantes, ainsi que cells non utiles en dehors du jeu (telles que les identifiants de prefabs)",
+      "<br>J'ai réalisé Slumber bridge en python grâce au framework FastAPI qui m'a permis de définir des endpoints extrèmement facilement. De plus, ce framework me permet de réaliser un server API en python, un language que j'apprécie bien plus que le classique JavaScript souvent utilisé pour le web.",
+      "La partie la plus difficile de ce projet à été de loin de comprendre l'organisation des données de base et de les réorganiser pour les rendre plus compréensibles et lisibles.",
+      "C'est grâce a ce projet que j'ai pu réaliser bien plus simplement un site web présentant ces données graphiquement: ZOOT."
+    ],
+    "techs": ["fastapi", "Python"]
+  },
+  {
+    "id": "ludimap",
+    "name": "Ludi-Map",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/Ludi-map"
+      }
+    ],
+    "preview": [
+      "Ludi-Map est un jeu interactif en ligne avec des cartes anciennes pour mettre en valeur la géographie et les monuments de notre région.",
+      "Ce site a été développé dans le cadre de la SAE du semestre 3 du BUT informatique."
+    ],
+    "desc": [
+      "Dans le cadre de la SAE du semestre 3 du BUT informatique, nous devions développer un site web mettant en valeur le patrimoine français.",
+      "C'est dans ce contexte que mon équipe a développé Ludi-Map, un jeu interactif présentant des cartes de l'état-major des années 1820-1866.",
+      "Les règles du jeu sont les suivantes :",
+      "Un monument historique est choisi au hasard, et il est affiché sur une photo aérienne.",
+      "Le joueur doit alors retrouver ce même monument, mais cette fois sur une carte des années 1820.",
+      "L'objectif de ce jeu est de présenter au joueur les différents monuments de notre région, ainsi que les paysages et la géographie environnante.",
+      "<br> Ludi-Map a été développé principalement en PHP et en JavaScript, ainsi que du HTML/CSS pour les interfaces. L'hébergement du serveur a été fait grâce à des machines virtuelles mises à disposition par l'IUT.",
+      "Pour le développement de ce site, j'ai fait partie d'une équipe de 6 personnes. Mon rôle dans cette équipe était principalement axé sur la partie back-end du site.",
+      "J'ai aussi joué le rôle de support aux différents membres du groupe, j'ai donc passé du temps à aider chacun d'entre eux à régler différents problèmes.",
+      "Ce projet m'a permis d'approfondir mes compétences dans les technologies web telles que PHP et JavaScript. J'ai aussi pu améliorer mes compétences de gestion de projet et de travail en groupe, puisque'une grande partie de cette SAE y était consacrée."
+    ],
+    "techs": ["php", "js", "html", "css"]
+  },
+  {
+    "id": "gamejam",
+    "name": "Le chateau sans porte",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/GameJam-iut"
+      }
+    ],
+    "preview": [
+      "Un jeu réalisé pour la gameJam de début de 3ème année de BUT informatique",
+      "Le thème est Médiéval avec la contrainte \"Apparition/Disparition\""
+    ],
+    "desc": [
+      "En début de 3ème année de BUT informatique, j'ai participé à une GameJam organisée par l'IUT",
+      "Les contraintes étaient les suivantes: le thème doit être médiéval, et nous devons intégrer la contrainte \"Apparition/Disparition\". Le jeu doit être réalisé en Python avec la bibliothèque Pygame",
+      "<br>Pour satisfaire toutes les contraintes, nous avons choisis de réaliser un jeu de voleur dans lequel le personnage (Georges) doit s'infiltrer dans un chateau pour trouver des objets de valeur sans se faire repérer par les gardes.",
+      "La contrainte d'apparition de de disparition a été implémentée plusieurs fois grâce aux différentes mécaniques du jeu:",
+      "D'abord, une des mécaniques principale est le souterrain. Le personnage peut utiliser des trappes pour accéder a un souterrain labyrinthique qui ne contient aucun trésor, mais qui permet de se déplacer entre les salles rapidement sans se soucier des gardes.",
+      "La seconde mécanique du jeu est la zone de vision. Les gardes et le personnage ont une zone de vision. Le but du jeu étant évidemment de rester en dehors de celle des gardes en se cachant derrière des objets. Mais si un garde sort de la zone de vision du joueur, il disparait.",
+      "Le tout est aussi agrémenté d'une montre qui rend le jeu plus difficile au cours du temps. Cela force le joueur à choisir entre aller plus loin pour plus de récompense ou terminer la partie plus facilement.",
+      "<br>Dans la réalisation de ce jeu, j'ai beaucoup participé à l'élaboration des mécaniques du jeu pour les rendre intéréssantes, puis, pendant la partie de codage, j'ai principalement réalisé la mécanique de souterrain ainsi que une grande partie du travail sur les collisions.",
+      "J'ai aussi été le principal responsable du level design. J'ai réalisé la carte du chateau (à l'aide d'outils de génération de labyrinthes) et j'ai placé à la main l'intégralité des trappes, trésors et gardes pour qu'il soient le plus intéréssants possibles, et qu'ils utilisent au maximum les mécaniques du jeu. Cela a donné au jeu une impression de solidité, chaque aspect du jeu foncionne avec les autres.",
+      "<br>Cette game jam, bien qu'elle soit encadrée et très restrictive (par le barème de notes et le language imposé), m'a permis de prendre de l'expérience dans le design de jeu vidéo, puisque j'ai été très impliqué à la fois dans le game design et le level design de cette game jam.",
+      ""
+    ],
+    "techs": ["Python", "Pygame"]
+  },
+  {
+    "id": "cellular",
+    "name": "Cellular automaton engine",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/Cellular-automaton"
+      }
+    ],
+    "preview": [
+      "Un simulateur d'automate cellulaire écrit en python.",
+      "Le programme permet de simuler les règles d'un automate cellulaire, notamment le jeu de la vie."
+    ],
+    "desc": [
+      "Dans le cadre de mon apprentissage personnel du langage Python et de la bibliothèque Pygame, j'ai réalisé ce moteur du jeu de la vie.",
+      "Il s'agit d'un programme entièrement écrit en python permettant de simuler un automate cellulaire, incluant le jeu de la vie, mais sans y être limité.",
+      "<br> Un automate cellulaire est un ensemble de cellules qui évoluent génération après génération sur une grille selon certaines règles.",
+      "Il faut donc recalculer l'état de chaque cellule à chaque génération.",
+      "Le programme permet entre autres de :",
+      "<ul> <li> Choisir un set de règles </li> <li> Créer un set de règles </li> <li> Modifier manuellement l'état de chaque cellule </li> </ul>",
+      "Ce projet était initialement prévu pour servir d'apprentissage de la bibliothèque Pygame, mais le résultat final étant satisfaisant, il est resté comme un de mes projets principaux.",
+      "N'ayant travaillé que seul sur ce projet, je n'ai mis en place aucune méthode d'organisation, bien que j'ai utilisé Git afin de sauvegarder mon travail.",
+      "J'ai tout de même été contraint par un temps limité pour la réalisation de ce projet.",
+      "<br> Lors de ce projet, j'ai principalement acquis des compétences techniques, comme une meilleure maîtrise du langage Python, et un apprentissage de la bibliothèque Pygame.",
+      "C'est aussi un des premiers programmes de taille conséquente que j'ai conçu, j'ai donc dû adopter des bonnes pratiques de programmation, telles que commenter le code et respecter les <a href=\"https://peps.python.org/pep-0008/\">PEP</a> (Python Enhancement Proposals).",
+      "<br> Enfin, j'ai apprécié ce projet principalement pour le fait de coder sans connaissance avancée de la bibliothèque, ce qui m'a obligé à me documenter pour réaliser ce programme."
+    ],
+    "techs": ["Python", "Pygame"]
+  },
+  {
+    "id": "interpreter",
+    "name": "Interpréteur d'opérations sur vecteurs",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/vector-language-interpreter"
+      }
+    ],
+    "preview": [
+      "Interpréteur pour un langage dédié à la manipulation de vecteurs, conçu avec une grammaire personnalisée définie en ANTLR"
+    ],
+    "desc": [
+      "Ceci est un projet universitaire pendant lequel j'ai pu réaliser un interpréteur pour une grammaire personnalisée",
+      "Après avoir définit une grammaire selon la syntaxe de l'outil ANTLR, j'ai dù écrire le code nécéssaire pour pouvoir interpréter des fichiers dans ce language.",
+      "Cette interprétation se fait en partie automatiquement par ANTLR, qui construit une structure utilisable depuis le code. Mon travail a été d'utiliser le pattern <a href=`https://refactoring.guru/design-patterns/visitor`>Visitor</a> pour partcourir cette structure et éxécuter la logique des opérations sur les vecteurs.",
+      "<br> Ce projet a été très intéréssant puisqu'il montre le fonctionnement des languages de programmation (principalement les languages interprétés comme le Python).",
+      "L'écriture des différents visiteurs m'a aussi permis de me familiariser avec ce nouveau Design Pattern, et d'améliorer mes compétences en matière de qualité de code."
+    ],
+    "techs": ["antlr", "java"]
+  },
+  {
+    "id": "dotfiles",
+    "name": "Dotfiles",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/dotfiles"
+      }
+    ],
+    "preview": [
+      "J'ai installé et configuré Arch Linux sur mon ordinateur personnel.",
+      "J'ai donc commencé ce projet avec un écran noir et une ligne de commande. J'ai maintenant un environnement de bureau entièrement fonctionnel, optimisé et personnalisé."
+    ],
+    "desc": [
+      "<h3 style=\"margin-top: 0;\">\"I use Arch btw\"</h3>",
+      "Arch Linux est une distribution Linux minimale qui a pour principe de n'inclure que le strict nécessaire au fonctionnement de l'ordinateur.",
+      "Je suis donc libre d'inclure tous les logiciels dont j'ai besoin, tout en gardant un grand contrôle sur mon système.",
+      "<br> Le terme \"dotfiles\" fait référence aux fichiers de configuration des logiciels installés, puisque leur nom commence en général par un point.",
+      "Le processus de configuration de Arch passe par la modification d'un grand nombre de ces fichiers pour que chaque application obtienne le comportement désiré.",
+      "J'ai principalement dû configurer les logiciels suivants :",
+      "<ul> <li> i3 : pour l'environnement graphique </li> <li> polybar : pour obtenir une barre des tâches </li> <li> rofi : pour obtenir un menu de lancement d'applications </li> <li> zsh : pour une invite de commande personnalisée </li> <li> neoVim : un éditeur de texte avancé pour du code </li> </ul>",
+      "<br> J'utilise Git pour stocker ces fichiers de configuration sur le cloud. De cette manière, je peux si besoin reproduire mon installation de Arch Linux rapidement sur un autre ordinateur.",
+      "Ce projet m'a permis de compléter ma connaissance du fonctionnement de Linux, mais aussi du fonctionnement d'un ordinateur et d'un système d'exploitation en général.",
+      "J'ai aussi découvert l'écosystème et la philosophie de Linux durant mes recherches pour des logiciels open-source.",
+      "<br> Ce projet a été un de mes projets les plus importants puisqu'il m'a permis d'obtenir l'environnement de travail que j'utilise quotidiennement, ce qui me permet d'être bien plus efficace que dans un environnement pré-configuré comme windows ou KDE Plasma."
+    ],
+    "techs": ["Linux", "Arch", "I3", "Polybar"]
+  },
+  {
+    "id": "portfolio",
+    "name": "Portfolio",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/portfolio"
+      }
+    ],
+    "preview": [
+      "Le site web sur lequel vous vous trouvez.",
+      "Il présente ma personne, ainsi que tous les projets principaux que j'ai pu réaliser, mais aussi ceux en cours de réalisation."
+    ],
+    "desc": [
+      "Ceci est mon portfolio.<br>",
+      "C'est le premier site web que j'ai pu réaliser, c'est donc avec lui que j'ai appris les différentes technologies web.",
+      "Ce site a donc grandement évolué avec mon apprentissage des langages comme le JavaScript.",
+      "Mon portfolio n'utilise pas de PHP, il est écrit entièrement en HTML et CSS, plus un script JavaScript qui permet de créer dynamiquement les cartes présentant mes projets, comme celle sur laquelle vous avez cliqué.",
+      "Cela permet aussi de pouvoir publier ce site sur un serveur n'ayant pas accès à un interpréteur PHP, comme GitHub Pages.",
+      "Le design du site est destiné à rester le plus sobre possible, pour que l'information présentée soit le centre d'intérêt principal du visiteur.",
+      "<br> Bien qu'ayant été initié par ma formation, je continue de développer ce site web en tant que projet personnel.",
+      "La réalisation de mon portfolio m'a principalement appris les fondamentaux des technologies web, principalement le HTML, CSS et JS.",
+      "<br> Ce site porte une place spéciale parmi les différents projets web que j'ai pu réaliser, car il correspond à ma vision du web, étant une page simple ayant pour unique but de présenter une information."
+    ],
+    "techs": ["html", "css", "js"]
+  },
+  {
+    "id": "maze",
+    "name": "Maze generator",
+    "source": [
+      {
+        "name": "Code Source",
+        "link": "https://github.com/Exaether/maze"
+      }
+    ],
+    "preview": [
+      "Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
+      "Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files."
+    ],
+    "desc": [
+      "Un projet de NSI dans lequel nous devions réaliser un programme permettant de générer un labyrinthe parfait.",
+      "Un labyrinthe parfait est un labyrinthe dans lequel on peut accéder à n'importe quelle case depuis n'importe quelle case, et ce, par un seul et unique chemin.",
+      "<br> Ce projet est codé entièrement en python et utilise des structures de données complexes comme des arbres, piles, ou files.",
+      "Le projet étant proposé dans le cadre du cours portant sur les structures d'arbre, nous avons dû modéliser le labyrinthe à partir d'un arbre.",
+      "Nous avons ensuite utilisé des piles et des files pour construire récursivement le labyrinthe de manière à ce qu'il soit parfait.",
+      "<br> Après le rendu de ce projet en cours de NSI, j'ai décidé de le continuer en implémentant un affichage graphique utilisant Pygame, ainsi qu'un joueur déplaçable dans le labyrinthe.",
+      "<br> J'ai donc travaillé dans un groupe de trois personnes durant la moitié de ce projet, de plus, la date de rendu était imposée.",
+      "Nous avons donc mis en place une division des tâches, en se répartissant chacun un fichier du projet à coder.",
+      "Nous n'avons toutefois pas utilisé Git pour cette partie du projet.",
+      "<br> Dans la suite du projet, que j'ai réalisé seul, j'ai cette fois utilisé Git, mais pas d'autres méthodes d'organisation.",
+      "Lors de ce projet, mon rôle a été d'écrire l'algorithme de génération du labyrinthe en lui-même. J'ai donc pu mettre en application les cours de NSI traitant des arbres, piles et files.",
+      "J'ai pu aussi renforcer ma maîtrise du langage python ainsi que mes pratiques de programmation.",
+      "<br> Lorsque j'ai repris le projet personnellement, j'ai dû utiliser Pygame, et j'ai donc renforcé ma connaissance de cette bibliothèque."
+    ],
+    "techs": ["Python", "Pygame"]
+  }
 ]
